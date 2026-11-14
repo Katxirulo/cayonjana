@@ -1,0 +1,41 @@
+name: Actualizar resultados desde Web
+
+on:
+  schedule:
+    # GitHub retrasa o descarta ejecuciones programadas en punto (minuto 0), por eso se usan minutos "raros".
+    # Sábados de 9:17 a 19:47, dos veces por hora (UTC 08-18): en sala hay partidos por la tarde
+    - cron: '17,47 8-18 * * 6'
+    # Domingos de 9:17 a 15:47, dos veces por hora (UTC 08-14)
+    - cron: '17,47 8-14 * * 0'
+    # De domingo a viernes a las 20:23 (19:23 UTC): horarios de la próxima jornada y actas corregidas
+    - cron: '23 19 * * 0-5'
+  workflow_dispatch:     # botón de ejecución manual
+
+permissions:
+  contents: write
+
+# si una ejecución tarda (la federación corta), la siguiente espera en vez de pisarla
+concurrency:
+  group: actualizar
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 25
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests beautifulsoup4 lxml pillow numpy scipy
+      - run: python scripts/escudos.py
+      - run: python scripts/actualizar.py
+      - name: Guardar cambios
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898283+github-actions[bot]@users.noreply.github.com"
+          git add index.html data/ escudos/
+          git diff --cached --quiet || git commit -m "Actualizar resultados y actas de partidos"
+          git pull --rebase --autostash
+          git push
