@@ -1,0 +1,1240 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Cayón "B" · Tercera Prebenjamín Sala Grupo B</title>
+<meta name="color-scheme" content="only light">
+<meta name="theme-color" content="#1F6B3A">
+<meta name="description" content="Estadísticas, clasificación y proyección de la Tercera Prebenjamín Sala, Grupo B.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>⚽</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Barlow:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  color-scheme:light;
+  --cesped:#1F6B3A; --cesped-2:#2C8a4E; --tiza:#FAFBF7; --tinta:#17201A; --tinta-2:#4E5A52;
+  --linea:#DDE3DC; --panel:#FFFFFF; --marcador:#F2B705; --v:#2C8A4E; --e:#8A938C; --d:#C8402F;
+  --fondo:#EEF2EC;
+  --display:"Barlow Condensed","Arial Narrow",Arial,sans-serif;
+  --texto:"Barlow",system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;
+}
+
+*{box-sizing:border-box}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--fondo);color:var(--tinta);font-family:var(--texto);font-size:16px;line-height:1.45;padding-bottom:env(safe-area-inset-bottom,0px)}
+.envoltura{max-width:960px;margin-inline:auto;padding:0 16px 40px}
+
+/* Marcador */
+.marcador{--club-1:var(--cesped);--club-2:var(--marcador);--club-txt:#fff;background:var(--club-1);--club-panel:rgba(255,255,255,.93);color:#17201A;padding:calc(20px + env(safe-area-inset-top,0px)) 16px 22px;position:relative;overflow:hidden}
+.marcador .interior{max-width:960px;margin-inline:auto;position:relative}
+.fila-sup{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:8px}
+.categoria{font-size:14px;background:var(--club-panel);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);padding:5px 10px;border-radius:8px}
+select.equipo{font:600 14px var(--texto);color:inherit;background:var(--club-panel);border:1px solid rgba(0,0,0,.15);border-radius:8px;padding:6px 10px;max-width:100%}
+select.equipo option{color:#17201A;background:#fff}
+.identidad{display:inline-flex;backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);align-items:center;gap:14px;margin:12px 0 0;background:var(--club-panel);padding:12px 18px 12px 12px;border-radius:12px;max-width:100%;box-shadow:0 2px 10px rgba(0,0,0,.18)}
+.identidad .textos{min-width:0}
+.escudo{width:clamp(56px,16vw,88px);height:clamp(56px,16vw,88px);object-fit:contain;flex:none;filter:drop-shadow(0 2px 4px rgba(0,0,0,.25))}
+h1{font-family:var(--display);font-weight:700;font-size:clamp(40px,11vw,72px);line-height:.95;margin:0;letter-spacing:.5px}
+.actualizado{font-size:14px;opacity:.85;margin:4px 0 0}
+.cifras{display:grid;grid-template-columns:repeat(auto-fit,minmax(130px,1fr));gap:10px;margin-top:18px}
+.cifra{background:var(--club-panel);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);border-radius:10px;padding:10px 12px;box-shadow:0 2px 10px rgba(0,0,0,.18)}
+.cifra .et{font-size:13px;opacity:.8}
+.cifra .val{font-family:var(--display);font-weight:600;font-size:36px;line-height:1.05;color:inherit;font-variant-numeric:tabular-nums}
+.cifra .sub{font-size:13px;opacity:.85}
+.racha{display:flex;gap:5px;margin-top:6px}
+.ficha{display:inline-flex;align-items:center;justify-content:center;width:26px;height:26px;border-radius:6px;font:700 14px var(--display);color:#fff}
+.ficha.V{background:var(--v)} .ficha.E{background:var(--e)} .ficha.D{background:var(--d)}
+.marcador .ficha{box-shadow:none}
+
+/* Contenido */
+.bloque{background:var(--panel);border:1px solid var(--linea);border-radius:14px;padding:18px 16px;margin-top:16px;min-width:0}
+.rejilla{display:grid;grid-template-columns:repeat(auto-fit,minmax(min(100%,400px),1fr));gap:0 16px}
+h2{font-family:var(--display);font-weight:600;font-size:24px;margin:0;line-height:1.1}
+.nota{font-size:14px;color:var(--tinta-2);margin:4px 0 14px}
+.cabecera{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:center;gap:10px}
+
+.proximo{display:grid;gap:10px}
+.cruce{font-family:var(--display);font-size:26px;font-weight:600;line-height:1.1}
+.cruce small{display:block;font-family:var(--texto);font-size:14px;font-weight:400;color:var(--tinta-2)}
+.barra-prob{display:flex;height:34px;border-radius:8px;overflow:hidden;font:600 14px var(--texto);color:#fff}
+.barra-prob span{display:flex;align-items:center;justify-content:center;min-width:0;white-space:nowrap}
+.leyenda{display:flex;gap:14px;font-size:13px;color:var(--tinta-2);flex-wrap:wrap}
+.leyenda i{display:inline-block;width:10px;height:10px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+
+svg{display:block;width:100%;height:auto;overflow:visible}
+svg text{font-family:var(--texto);font-size:12px;fill:var(--tinta-2)}
+
+button.boton{font:600 14px var(--texto);padding:7px 12px;border-radius:8px;border:1px solid var(--linea);background:var(--panel);color:var(--tinta);cursor:pointer}
+button.boton[aria-pressed=true]{background:var(--club-1,var(--cesped));border-color:var(--club-1,var(--cesped));color:var(--club-txt,#fff)}
+button.boton:focus-visible,select:focus-visible{outline:3px solid var(--marcador);outline-offset:2px}
+.segmentado{display:inline-flex}
+.segmentado .boton{border-radius:0}
+.segmentado .boton:first-child{border-radius:8px 0 0 8px}
+.segmentado .boton:last-child{border-radius:0 8px 8px 0;margin-left:-1px}
+
+.desliza{overflow-x:auto;max-height:30rem;overflow-y:auto}
+table{width:100%;border-collapse:collapse;font-size:14px;font-variant-numeric:tabular-nums}
+th{position:sticky;top:0;background:var(--panel);text-align:right;font-weight:600;color:var(--tinta-2);padding:7px 6px;border-bottom:2px solid var(--linea);white-space:nowrap}
+td{text-align:right;padding:7px 6px;border-bottom:1px solid var(--linea);white-space:nowrap}
+.izq{text-align:left}
+tr.yo td{background:color-mix(in srgb,var(--club-1,var(--marcador)) 20%,transparent);font-weight:600}
+tr.yo td:first-child{box-shadow:inset 4px 0 0 var(--club-1,var(--marcador))}
+tr.pendiente td{color:var(--tinta-2)}
+.prob{display:none}
+.con-prob .prob{display:table-cell}
+td.pv{color:var(--v);font-weight:600}
+.zona{display:inline-flex;align-items:center;justify-content:center;min-width:26px;height:22px;padding:0 5px;border-radius:5px;font-weight:600}
+.zona.asc{background:var(--v);color:#fff}
+.zona.desc{background:var(--d);color:#fff}
+.leyenda-zonas{display:flex;gap:14px;flex-wrap:wrap;font-size:13px;color:var(--tinta-2);margin-top:10px}
+.leyenda-zonas i{display:inline-block;width:12px;height:12px;border-radius:3px;margin-right:5px;vertical-align:-1px}
+@media (max-width:560px){.ocultar-movil{display:none}}
+
+/* Jornada en curso */
+:root{--p1:#2F6FB3;--p2:#C77A12}
+
+.estado-j{display:inline-block;font-size:13px;font-weight:600;padding:3px 9px;border-radius:999px;background:var(--fondo);border:1px solid var(--linea);color:var(--tinta-2)}
+.estado-j.vivo{background:var(--marcador);border-color:var(--marcador);color:#17201A}
+.lista-j{display:grid;gap:8px}
+.pj{border:1px solid var(--linea);border-radius:10px;padding:10px 12px;display:grid;gap:7px}
+.pj.yo{border-color:var(--club-1,var(--marcador));box-shadow:inset 4px 0 0 var(--club-1,var(--marcador))}
+.pj-meta{font-size:13px;color:var(--tinta-2);display:flex;flex-wrap:wrap;gap:4px 10px}
+.pj-meta b{color:var(--tinta);font-weight:600}
+.pj-cruce{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:10px;font-family:var(--display);font-size:20px;font-weight:600;line-height:1.1}
+.pj-cruce .vis{text-align:right}
+.pj-res{font-size:22px;min-width:58px;text-align:center;padding:2px 8px;border-radius:6px;background:var(--tinta);color:var(--panel);font-variant-numeric:tabular-nums}
+.pj-res.pend{background:none;color:var(--tinta-2);font-size:16px;font-weight:500}
+.barra-prob.mini{height:24px;font-size:12px;border-radius:6px}
+.tag-final{font-size:12px;font-weight:600;color:var(--v)}
+td.esperado{color:var(--tinta-2);font-style:italic}
+td.real{font-weight:700}
+.mov{font-size:12px;font-weight:600}
+.mov.sube{color:var(--v)} .mov.baja{color:var(--d)} .mov.igual{color:var(--tinta-2)}
+@media (max-width:560px){.pj-cruce{font-size:17px}.pj-res{font-size:19px;min-width:50px}}
+
+details{margin-top:16px;font-size:14px;color:var(--tinta-2)}
+details summary{cursor:pointer;font-weight:600;color:var(--tinta)}
+footer{font-size:13px;color:var(--tinta-2);margin-top:20px;text-align:center}
+
+/* ===== ESTILO APP (previsualización) ===== */
+:root{
+  --fondo:#F2F3F7; --panel:#FFFFFF; --tinta:#1C1C1E; --tinta-2:#6E6E73; --linea:#E8E8ED;
+  --v:#2DB45A; --e:#A1A1A8; --d:#F0453A; --p1:#0A84FF; --p2:#FF9F0A; --marcador:#FFD60A;
+  --texto:-apple-system,BlinkMacSystemFont,"SF Pro Text","Inter","Segoe UI",Roboto,system-ui,sans-serif;
+  --display:"Barlow Condensed",-apple-system,"SF Pro Display",system-ui,sans-serif;
+  --radio:22px; --sombra:0 1px 2px rgba(0,0,0,.04),0 6px 22px rgba(15,23,42,.06);
+}
+
+body{background:var(--fondo);-webkit-font-smoothing:antialiased;letter-spacing:-.01em}
+.envoltura{max-width:1040px}
+
+/* Cabecera: banda del club con esquinas redondeadas y "widgets" de cristal */
+.marcador{border-radius:0 0 32px 32px;padding-bottom:26px;
+  background:linear-gradient(135deg,var(--club-1) 0%,color-mix(in srgb,var(--club-1) 70%,#000) 100%)}
+/* Bandera a pliegues: bandas de luz y sombra que recorren los colores del club */
+.marcador::after{content:"";position:absolute;inset:0 -60%;pointer-events:none;will-change:transform;
+  background:repeating-linear-gradient(100deg,rgba(0,0,0,.20) 0px,rgba(0,0,0,.04) 70px,rgba(255,255,255,.16) 140px,rgba(0,0,0,.04) 210px,rgba(0,0,0,.20) 280px);
+  animation:pliegue 4.5s linear infinite}
+@keyframes pliegue{from{transform:translateX(0)}to{transform:translateX(280px)}}
+@media (prefers-reduced-motion:reduce){.marcador::after{animation:none}}
+.marcador .interior{z-index:1}
+.categoria,select.equipo{border-radius:999px;border:0;padding:7px 14px;background:rgba(255,255,255,.9);color:#1C1C1E;font-weight:600;box-shadow:0 1px 3px rgba(0,0,0,.12)}
+.identidad{border-radius:24px;background:rgba(255,255,255,.92);color:#1C1C1E;padding:14px 22px 14px 14px;box-shadow:0 8px 30px rgba(0,0,0,.18)}
+h1{font-weight:700;letter-spacing:0;text-transform:uppercase}
+.actualizado{font-size:13px;color:#6E6E73;opacity:1}
+.cifras{gap:12px;grid-template-columns:repeat(auto-fit,minmax(150px,1fr))}
+.cifra{border-radius:20px;background:rgba(255,255,255,.92);color:#1C1C1E;padding:12px 14px;box-shadow:0 4px 16px rgba(0,0,0,.12)}
+.cifra .et{font-size:12px;font-weight:600;text-transform:uppercase;letter-spacing:.04em;color:#6E6E73;opacity:1}
+.cifra .val{font-size:40px;font-weight:700}
+.cifra .sub{color:#6E6E73;opacity:1}
+.ficha{border-radius:8px;width:28px;height:28px}
+
+/* Tarjetas */
+.bloque{border:0;border-radius:var(--radio);box-shadow:var(--sombra);padding:20px 18px;margin-top:18px}
+.rejilla{gap:0 18px}
+h2{font-family:var(--texto);font-weight:700;font-size:21px;letter-spacing:-.02em}
+.nota{font-size:13.5px;margin:4px 0 14px}
+
+/* Controles tipo iOS */
+.segmentado{background:color-mix(in srgb,var(--tinta) 7%,transparent);border-radius:11px;padding:3px;gap:2px}
+.segmentado .boton,.segmentado .boton:first-child,.segmentado .boton:last-child{border:0;border-radius:8px;margin:0;background:transparent;color:var(--tinta);padding:6px 14px;font:600 13px var(--texto)}
+.segmentado .boton[aria-pressed=true]{background:var(--panel);color:var(--tinta);box-shadow:0 1px 3px rgba(0,0,0,.14)}
+button.boton{border-radius:999px;font:600 13px var(--texto);padding:7px 14px}
+#btn-prob{border:0;background:color-mix(in srgb,var(--tinta) 7%,transparent)}
+#btn-prob[aria-pressed=true]{background:var(--club-1);color:var(--club-txt,#fff)}
+
+/* Tablas limpias */
+table{font-size:14.5px}
+th{font-size:11.5px;text-transform:uppercase;letter-spacing:.05em;border-bottom:1px solid var(--linea);padding:8px 8px}
+td{border-bottom:1px solid var(--linea);padding:10px 8px}
+tbody tr:last-child td{border-bottom:0}
+tr.yo td{background:color-mix(in srgb,var(--club-1,var(--p1)) 12%,transparent)}
+tr.yo td:first-child{box-shadow:none;border-radius:12px 0 0 12px}
+tr.yo td:last-child{border-radius:0 12px 12px 0}
+.zona{border-radius:8px;min-width:28px;height:24px}
+.desliza{border-radius:14px}
+.leyenda-zonas,.leyenda{font-size:12.5px}
+
+/* Probabilidades y partidos */
+.barra-prob{border-radius:12px;gap:2px;background:var(--panel);height:32px}
+.barra-prob span:first-child{border-radius:12px 4px 4px 12px}
+.barra-prob span:last-child{border-radius:4px 12px 12px 4px}
+.barra-prob.mini{height:26px;border-radius:9px}
+.barra-prob.mini span:first-child{border-radius:9px 3px 3px 9px}
+.barra-prob.mini span:last-child{border-radius:3px 9px 9px 3px}
+.pj{border:0;border-radius:18px;background:color-mix(in srgb,var(--tinta) 3.5%,transparent);padding:12px 14px}
+.pj.yo{box-shadow:inset 0 0 0 2px var(--club-1,var(--p1))}
+.pj-res{border-radius:10px;font-family:var(--display);background:#1C1C1E;color:#fff}
+.estado-j{border:0;background:color-mix(in srgb,var(--tinta) 7%,transparent);padding:4px 11px}
+.estado-j.vivo{background:#FF3B30;color:#fff}
+.estado-j.vivo::before{content:"● ";animation:latido 1.4s infinite}
+@keyframes latido{50%{opacity:.3}}
+.cruce{font-size:28px}
+details{background:var(--panel);border-radius:var(--radio);padding:14px 18px;box-shadow:var(--sombra)}
+#proximo h2{margin-bottom:10px}
+@media (max-width:560px){
+  .categoria{font-size:12px;padding:6px 12px}
+  .identidad{padding:10px 16px 10px 10px;gap:10px}
+  h1{font-size:clamp(32px,10vw,44px)}
+  .cifras{grid-template-columns:repeat(3,1fr);gap:8px}
+  .cifra{padding:9px 10px;border-radius:16px}
+  .cifra .val{font-size:28px}
+  .cifra .et{font-size:10.5px}
+  .cifra .sub{font-size:11.5px}
+  .cifra:nth-child(4),.cifra:nth-child(5){grid-column:span 1}
+  .cifra:last-child{grid-column:span 2}
+  .ficha{width:24px;height:24px;font-size:13px}
+  .cruce{font-size:23px}
+}
+
+/* ===== Opciones bien visibles (color del club) ===== */
+:root{color-scheme:light only}
+.segmentado,#btn-prob{--c:var(--club-1,#0A84FF);--c-osc:color-mix(in srgb,var(--c) 72%,#000)}
+.segmentado{background:color-mix(in srgb,var(--c) 10%,#fff);border:1.5px solid color-mix(in srgb,var(--c) 40%,#fff);
+  border-radius:14px;padding:4px;gap:4px;box-shadow:0 2px 8px rgba(0,0,0,.07)}
+.segmentado .boton,.segmentado .boton:first-child,.segmentado .boton:last-child{min-height:36px;padding:7px 16px;border-radius:10px;
+  color:var(--c-osc);font:700 14px var(--texto);background:transparent;cursor:pointer;transition:background .15s,color .15s}
+.segmentado .boton:hover{background:color-mix(in srgb,var(--c) 16%,#fff)}
+.segmentado .boton[aria-pressed=true]{background:var(--c);color:var(--club-txt,#fff);box-shadow:0 2px 6px color-mix(in srgb,var(--c) 45%,transparent)}
+#btn-prob{min-height:38px;padding:8px 16px 8px 12px;border-radius:999px;border:1.5px solid color-mix(in srgb,var(--c) 45%,#fff);
+  background:color-mix(in srgb,var(--c) 10%,#fff);color:var(--c-osc);font:700 14px var(--texto);box-shadow:0 2px 8px rgba(0,0,0,.07);
+  display:inline-flex;align-items:center;gap:8px}
+#btn-prob::before{content:"";width:30px;height:18px;border-radius:999px;background:#D1D1D6;flex:none;
+  box-shadow:inset 0 0 0 2px #D1D1D6;transition:.2s;
+  background-image:radial-gradient(circle at 9px 9px,#fff 7px,transparent 7.5px)}
+#btn-prob[aria-pressed=true]{background:var(--c);border-color:var(--c);color:var(--club-txt,#fff)}
+#btn-prob[aria-pressed=true]::before{background-color:rgba(255,255,255,.35);box-shadow:inset 0 0 0 2px rgba(255,255,255,.35);
+  background-image:radial-gradient(circle at 21px 9px,#fff 7px,transparent 7.5px)}
+.cabecera{row-gap:12px}
+@media (max-width:560px){.cabecera>.segmentado{width:100%}.segmentado .boton{flex:1}}
+@media (max-width:560px){
+  #lista-goleadores td.izq,#lista-participacion td.izq,#tabla-partidos td.izq{white-space:normal;line-height:1.25}
+  #lista-goleadores small,#lista-participacion small{display:block;margin-top:2px}
+  #tabla-partidos td,#tabla-partidos th{padding-left:5px;padding-right:5px}
+}
+.corto{display:none}
+@media (max-width:560px){#tabla-partidos .largo{display:none}#tabla-partidos .corto{display:inline}#tabla-partidos .ficha{width:24px;height:24px}}
+
+/* ===== Selector de equipo destacado ===== */
+.selector-equipo{display:inline-flex;flex-direction:column;gap:2px;background:#fff;color:#1C1C1E;border-radius:18px;padding:8px 14px 8px;
+  border:2.5px solid var(--club-2,#FFD60A);box-shadow:0 6px 20px rgba(0,0,0,.25);cursor:pointer;animation:llamada 1.6s ease-out 3;max-width:100%}
+.selector-et{font-size:11.5px;font-weight:800;text-transform:uppercase;letter-spacing:.06em;color:color-mix(in srgb,var(--club-1) 75%,#000)}
+.selector-equipo select.equipo{appearance:none;-webkit-appearance:none;border:0;box-shadow:none;background:transparent;padding:2px 30px 2px 0;
+  font:800 18px var(--texto);color:#1C1C1E;cursor:pointer;border-radius:0;
+  background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='22' height='22' viewBox='0 0 24 24'%3E%3Ccircle cx='12' cy='12' r='12' fill='%231C1C1E'/%3E%3Cpath d='M7 10l5 5 5-5' fill='none' stroke='%23fff' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E");
+  background-repeat:no-repeat;background-position:right center;min-width:200px}
+.selector-equipo:hover{transform:translateY(-1px);box-shadow:0 10px 26px rgba(0,0,0,.3)}
+.selector-equipo:focus-within{outline:3px solid #fff;outline-offset:2px}
+@keyframes llamada{0%{box-shadow:0 6px 20px rgba(0,0,0,.25),0 0 0 0 rgba(255,255,255,.85)}100%{box-shadow:0 6px 20px rgba(0,0,0,.25),0 0 0 16px rgba(255,255,255,0)}}
+@media (max-width:560px){.fila-sup{flex-direction:column;align-items:stretch}.selector-equipo{width:100%;order:-1}.selector-equipo select.equipo{width:100%}}
+@media (max-width:560px){
+  #tabla-clas-jornada td,#tabla-clas-jornada th,#tabla-v1 td,#tabla-v1 th,#tabla-fin td,#tabla-fin th,#tabla-clas td,#tabla-clas th{padding-left:5px;padding-right:5px}
+  #tabla-clas-jornada td.izq,#tabla-v1 td.izq,#tabla-fin td.izq{white-space:normal;line-height:1.2}
+}
+@media (max-width:380px){#tabla-partidos{font-size:13px}#tabla-partidos td,#tabla-partidos th{padding-left:3px;padding-right:3px}}
+.arb-n{display:inline-flex;align-items:center;justify-content:center;min-width:26px;height:24px;padding:0 6px;border-radius:8px;font-weight:700;color:#fff}
+.arb-n.V{background:var(--v)}.arb-n.E{background:var(--e)}.arb-n.D{background:var(--d)}
+.arb-0{color:var(--tinta-2)}
+#tabla-arbitros td.izq{white-space:normal}
+.jchips{display:flex;flex-wrap:wrap;gap:4px}
+.jchip{display:inline-block;padding:2px 7px;border-radius:7px;font-size:12.5px;font-weight:700;border:1.5px solid;background:#fff}
+.jchip.V{color:var(--v);border-color:var(--v)}.jchip.E{color:#6E6E73;border-color:var(--e)}.jchip.D{color:var(--d);border-color:var(--d)}
+@media (max-width:560px){#tabla-arbitros td,#tabla-arbitros th{padding-left:4px;padding-right:4px}#tabla-arbitros{font-size:13.5px}}
+/* Escudo en relieve: silueta blanca translúcida, como estampada en la bandera */
+.marcador::before{content:"";position:absolute;pointer-events:none;z-index:0;
+  width:min(620px,95vw);aspect-ratio:1;right:-4%;top:50%;transform:translateY(-50%) rotate(-8deg);
+  background:var(--escudo-fondo,none) no-repeat center/contain;opacity:.6;filter:grayscale(1) contrast(1.6) brightness(1.15);mix-blend-mode:soft-light}
+@media (max-width:560px){.marcador::before{width:120vw;right:-38%;top:auto;bottom:-6%;transform:rotate(-8deg)}}
+.tag-vivo{font-size:12px;font-weight:800;color:#fff;background:#FF3B30;border-radius:999px;padding:2px 9px}
+.tag-vivo::before{content:"● ";animation:latido 1.4s infinite}
+.pj-res.vivo{background:#FF3B30;color:#fff;font-size:18px;letter-spacing:2px}
+button.pj-res.abre{border:0;cursor:pointer;display:inline-flex;align-items:center;gap:4px;font:inherit;font-family:var(--display);font-size:22px;line-height:1.1;
+  box-shadow:0 2px 8px rgba(0,0,0,.18);transition:transform .15s}
+button.pj-res.abre:hover{transform:translateY(-1px)}
+button.pj-res.abre .flecha{font-size:13px;opacity:.8;transition:transform .2s}
+button.pj-res.abre[aria-expanded=true] .flecha{transform:rotate(180deg)}
+.pj-goles{border-top:1px solid var(--linea);padding-top:8px;margin-top:2px}
+.lista-goles{list-style:none;margin:0;padding:0;display:grid;gap:4px}
+.lista-goles li{display:grid;grid-template-columns:1fr auto 1fr;align-items:center;gap:8px;font-size:14px}
+.lista-goles li.L .gol-nom{text-align:right}
+.lista-goles small{color:var(--tinta-2);font-size:11.5px}
+.gol-min{display:inline-flex;align-items:center;gap:6px;font-size:12px;font-weight:700;color:var(--tinta-2);min-width:74px;justify-content:center}
+.gol-min b{background:var(--tinta);color:var(--panel);border-radius:6px;padding:1px 6px;font-size:12px}
+.gol-min::before{content:"⚽";font-size:12px}
+.pj-goles-nada{margin:0;font-size:13px;color:var(--tinta-2);text-align:center}
+.pestanas-j{margin:10px 0 2px}
+@media (max-width:560px){.pestanas-j{width:100%}.pestanas-j .boton{flex:1}}
+</style>
+</head>
+<body>
+
+<header class="marcador">
+  <div class="interior">
+    <div class="fila-sup">
+      <span class="categoria">Tercera Prebenjamín Sala, Grupo B, temporada 2026-2027</span>
+      <label class="selector-equipo"><span class="selector-et">⇄ Elige equipo</span><select class="equipo" id="equipo" aria-label="Elegir equipo"></select></label>
+    </div>
+    <div class="identidad">
+      <img class="escudo" id="escudo" alt="" hidden>
+      <div class="textos">
+        <h1 id="nombre">Ayron Club</h1>
+        <p class="actualizado" id="actualizado"></p>
+      </div>
+    </div>
+    <div class="cifras">
+      <div class="cifra"><div class="et">Posición</div><div class="val" id="c-pos">–</div><div class="sub">de <span id="c-n">16</span> equipos</div></div>
+      <div class="cifra"><div class="et">Puntos</div><div class="val" id="c-pts">–</div><div class="sub" id="c-ved"></div></div>
+      <div class="cifra"><div class="et">Goles</div><div class="val" id="c-goles">–</div><div class="sub" id="c-dg"></div></div>
+      <div class="cifra"><div class="et">Casa / fuera</div><div class="val" id="c-cf">–</div><div class="sub">puntos</div></div>
+      <div class="cifra"><div class="et">Últimos 5</div><div class="racha" id="c-racha"></div></div>
+    </div>
+  </div>
+</header>
+
+<main class="envoltura">
+
+  <section class="bloque" id="proximo">
+    <h2>Próximo partido</h2>
+    <div class="proximo" id="proximo-cuerpo"></div>
+  </section>
+
+  <!-- JORNADA EN CURSO: partidos, horarios, probabilidades y clasificación prevista -->
+  <div class="rejilla">
+    <section class="bloque" id="jornada">
+      <div class="cabecera">
+        <h2 id="t-jornada">Jornada</h2>
+        <span class="estado-j" id="estado-jornada"></span>
+      </div>
+      <div class="segmentado pestanas-j" role="group" aria-label="Jornada a mostrar">
+        <button type="button" class="boton" data-vista-j="actual" aria-pressed="true" id="btn-j-actual">Jornada</button>
+        <button type="button" class="boton" data-vista-j="sig" aria-pressed="false" id="btn-j-sig">Próxima</button>
+      </div>
+      <p class="nota" id="nota-jornada">Cargando calendario...</p>
+      <div class="lista-j" id="lista-jornada"></div>
+      <div class="leyenda" style="margin-top:10px"><span><i style="background:var(--p1)"></i>Gana el local</span><span><i style="background:var(--e)"></i>Empate</span><span><i style="background:var(--p2)"></i>Gana el visitante</span></div>
+    </section>
+    <section class="bloque">
+      <h2 id="t-clas-jornada">Clasificación prevista</h2>
+      <p class="nota" id="nota-clas-jornada">Partidos jugados con su resultado real; los pendientes, con su resultado más probable (3, 1 o 0 puntos).</p>
+      <div class="desliza">
+        <table id="tabla-clas-jornada">
+          <thead><tr><th>#</th><th class="izq">Equipo</th><th>Antes</th><th id="th-jornada">Jornada</th><th>Pts</th><th></th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="leyenda-zonas"><span><b style="color:var(--tinta)">+3</b>&nbsp;puntos reales</span><span><i style="background:none;width:auto;height:auto;margin:0;font-style:italic">+3</i>&nbsp;resultado más probable</span></div>
+    </section>
+  </div>
+
+  <div class="rejilla">
+    <section class="bloque">
+      <h2>Posición jornada a jornada</h2>
+      <p class="nota">Puesto en la clasificación al terminar cada jornada.</p>
+      <div id="graf-pos"></div>
+    </section>
+    <section class="bloque">
+      <h2>Goles por partido</h2>
+      <p class="nota">Hacia arriba, goles marcados. Hacia abajo, encajados.</p>
+      <div id="graf-goles"></div>
+    </section>
+  </div>
+
+  <!-- SECCIÓN DE ESTADÍSTICAS DE JUGADORES EXTRAÍDAS DE ACTAS -->
+  <div class="rejilla">
+    <section class="bloque">
+      <div class="cabecera">
+        <h2>⚽ Máximos Goleadores</h2>
+        <div class="segmentado" role="group" aria-label="Filtro de goleadores">
+          <button type="button" class="boton" data-filtro-gol="club" aria-pressed="true" id="btn-gol-club">Mi equipo</button>
+          <button type="button" class="boton" data-filtro-gol="todos" aria-pressed="false">Todos</button>
+        </div>
+      </div>
+      <p class="nota" id="nota-goleadores">Goles de los jugadores del equipo elegido según las actas oficiales.</p>
+      <div class="desliza">
+        <table>
+          <thead><tr><th class="izq">Jugador</th><th>Goles</th></tr></thead>
+          <tbody id="lista-goleadores">
+            <tr><td class="izq" colspan="2">Cargando goleadores...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="bloque">
+      <h2>👕 Partidos Jugados</h2>
+      <p class="nota" id="nota-participacion">Convocatorias del equipo elegido según las actas oficiales.</p>
+      <div class="desliza">
+        <table>
+          <thead><tr><th class="izq">Jugador</th><th>Partidos</th></tr></thead>
+          <tbody id="lista-participacion">
+            <tr><td class="izq" colspan="2">Cargando participación...</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </section>
+  </div>
+
+  <!-- ÁRBITROS (de las actas) -->
+  <section class="bloque" id="arbitros">
+    <h2 id="t-arbitros">🟨 Árbitros</h2>
+    <p class="nota" id="nota-arbitros">Cargando árbitros...</p>
+    <div class="desliza">
+      <table id="tabla-arbitros">
+        <thead></thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </section>
+
+  <div class="rejilla">
+    <section class="bloque">
+      <div class="cabecera">
+        <h2 id="t-partidos">Partidos</h2>
+        <button type="button" class="boton" id="btn-prob" aria-pressed="false">Ver probabilidades</button>
+      </div>
+      <p class="nota">Marcador como local–visitante. Las probabilidades son de victoria, empate y derrota del equipo elegido, en %.</p>
+      <div class="desliza">
+        <table id="tabla-partidos">
+          <thead><tr><th>J</th><th class="izq"><span class="largo">Dónde</span><span class="corto">C/F</span></th><th class="izq">Rival</th><th><span class="largo">Marcador</span><span class="corto">Res.</span></th><th></th><th class="prob">%V</th><th class="prob">%E</th><th class="prob">%D</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+    </section>
+
+    <section class="bloque">
+      <div class="cabecera">
+        <h2>Clasificación</h2>
+        <div class="segmentado" role="group" aria-label="Vista de la clasificación">
+          <button type="button" class="boton" data-vista="actual" aria-pressed="true">Actual</button>
+          <button type="button" class="boton" data-vista="v1" aria-pressed="false">1ª Vuelta</button>
+          <button type="button" class="boton" data-vista="fin" aria-pressed="false">Fin Liga</button>
+        </div>
+      </div>
+      <p class="nota" data-ver="actual">3 puntos por victoria y 1 por empate. Los empates a puntos se ordenan por diferencia de goles.</p>
+      <p class="nota" data-ver="v1" hidden>Clasificación prevista al acabar la primera vuelta (J13), simulando 10.000 veces los partidos pendientes: cada uno da 3, 1 o 0 puntos según sus probabilidades. «Previstos» es el total más habitual (la mediana).</p>
+      <p class="nota" data-ver="fin" hidden>Clasificación prevista al final de la liga (J26), simulando 10.000 veces los partidos pendientes: cada uno da 3, 1 o 0 puntos según sus probabilidades. «Previstos» es el total más habitual (la mediana).</p>
+      <div class="desliza" data-ver="actual">
+        <table id="tabla-clas">
+          <thead><tr><th>#</th><th class="izq">Equipo</th><th>PJ</th><th class="ocultar-movil">V</th><th class="ocultar-movil">E</th><th class="ocultar-movil">D</th><th class="ocultar-movil">GF</th><th class="ocultar-movil">GC</th><th>DG</th><th>Pts</th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="desliza" data-ver="v1" hidden>
+        <table id="tabla-v1">
+          <thead><tr><th>#</th><th class="izq">Equipo</th><th>Ahora</th><th>Previstos</th><th></th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="desliza" data-ver="fin" hidden>
+        <table id="tabla-fin">
+          <thead><tr><th>#</th><th class="izq">Equipo</th><th>Ahora</th><th>Previstos</th><th></th></tr></thead>
+          <tbody></tbody>
+        </table>
+      </div>
+      <div class="leyenda-zonas"></div>
+    </section>
+  </div>
+
+  <details>
+    <summary>Cómo se calcula</summary>
+    <p>Los resultados salen del cuadro que publica la Real Federación Cántabra de Fútbol. Los marcadores se calculan contando los goles de cada acta oficial.</p>
+    <p>La jornada en curso cambia sola: cuando se completa una jornada (o ya han pasado todas sus fechas), pasa a la siguiente. Los horarios y campos salen de la web de la federación, que los publica una semana antes. En la clasificación prevista de la jornada, los partidos ya jugados cuentan con su resultado real y los pendientes con su resultado más probable: 3 puntos al favorito, o 1 a cada uno si lo más probable es el empate.</p>
+    <p>La clasificación se calcula aquí. Si hay empate a puntos, la federación puede aplicar otros criterios, como el enfrentamiento directo.</p>
+    <p>Las probabilidades salen de los goles marcados y encajados por partido de cada equipo, suavizados hacia la media del grupo, con la ventaja de jugar en casa que muestran los resultados. Los goles se modelan con una distribución de Poisson. Las clasificaciones de 1ª vuelta y fin de liga simulan 10.000 veces los partidos pendientes, cada uno con 3, 1 o 0 puntos según sus probabilidades, y toman la mediana de puntos de cada equipo. Con pocos partidos jugados, es una tendencia, no un pronóstico seguro.</p>
+  </details>
+  <footer>Página no oficial, hecha por un aficionado.</footer>
+</main>
+
+<script type="text/plain" id="datos">
+jornada,local,visitante,goles_local,goles_visitante
+1,San Martín,Textil Escudo,,
+1,Polanco,Velarde,,
+1,Marina Sport,At. Cueto,,
+1,Vimenor,Ayron,,
+1,Tropezón,Rayo Santa Cruz,,
+1,San Felices,Amistad Sniace,,
+1,Cayón,Arenas de Iguña,,
+2,Velarde,San Felices,,
+2,At. Cueto,Tropezón,,
+2,Textil Escudo,Polanco,,
+2,Arenas de Iguña,Vimenor,,
+2,Rayo Santa Cruz,Cayón,,
+2,Amistad Sniace,Marina Sport,,
+2,Ayron,San Martín,,
+3,Polanco,Ayron,,
+3,San Martín,Arenas de Iguña,,
+3,Amistad Sniace,Velarde,,
+3,Marina Sport,Tropezón,,
+3,Cayón,At. Cueto,,
+3,San Felices,Textil Escudo,,
+3,Vimenor,Rayo Santa Cruz,,
+4,Arenas de Iguña,Polanco,,
+4,Velarde,Marina Sport,,
+4,Textil Escudo,Amistad Sniace,,
+4,Rayo Santa Cruz,San Martín,,
+4,At. Cueto,Vimenor,,
+4,Tropezón,Cayón,,
+4,Ayron,San Felices,,
+5,San Martín,At. Cueto,,
+5,Velarde,Textil Escudo,,
+5,Polanco,Rayo Santa Cruz,,
+5,Marina Sport,Cayón,,
+5,San Felices,Arenas de Iguña,,
+5,Amistad Sniace,Ayron,,
+5,Vimenor,Tropezón,,
+6,Cayón,Vimenor,,
+6,Arenas de Iguña,Amistad Sniace,,
+6,At. Cueto,Polanco,,
+6,Ayron,Velarde,,
+6,Tropezón,San Martín,,
+6,Textil Escudo,Marina Sport,,
+6,Rayo Santa Cruz,San Felices,,
+7,Velarde,Arenas de Iguña,,
+7,Polanco,Tropezón,,
+7,San Martín,Cayón,,
+7,San Felices,At. Cueto,,
+7,Marina Sport,Vimenor,,
+7,Textil Escudo,Ayron,,
+7,Amistad Sniace,Rayo Santa Cruz,,
+8,Ayron,Marina Sport,,
+8,Arenas de Iguña,Textil Escudo,,
+8,Rayo Santa Cruz,Velarde,,
+8,At. Cueto,Amistad Sniace,,
+8,Tropezón,San Felices,,
+8,Cayón,Polanco,,
+8,Vimenor,San Martín,,
+9,Velarde,At. Cueto,,
+9,Ayron,Arenas de Iguña,,
+9,Textil Escudo,Rayo Santa Cruz,,
+9,Amistad Sniace,Tropezón,,
+9,San Felices,Cayón,,
+9,Polanco,Vimenor,,
+9,Marina Sport,San Martín,,
+10,Arenas de Iguña,Marina Sport,,
+10,Rayo Santa Cruz,Ayron,,
+10,At. Cueto,Textil Escudo,,
+10,Tropezón,Velarde,,
+10,Cayón,Amistad Sniace,,
+10,Vimenor,San Felices,,
+10,San Martín,Polanco,,
+11,Velarde,Cayón,,
+11,Arenas de Iguña,Rayo Santa Cruz,,
+11,Ayron,At. Cueto,,
+11,Textil Escudo,Tropezón,,
+11,Amistad Sniace,Vimenor,,
+11,San Felices,San Martín,,
+11,Marina Sport,Polanco,,
+12,Marina Sport,Rayo Santa Cruz,,
+12,At. Cueto,Arenas de Iguña,,
+12,Tropezón,Ayron,,
+12,Cayón,Textil Escudo,,
+12,Vimenor,Velarde,,
+12,San Martín,Amistad Sniace,,
+12,Polanco,San Felices,,
+13,Velarde,San Martín,,
+13,Rayo Santa Cruz,At. Cueto,,
+13,Arenas de Iguña,Tropezón,,
+13,Ayron,Cayón,,
+13,Textil Escudo,Vimenor,,
+13,Amistad Sniace,Polanco,,
+13,San Felices,Marina Sport,,
+14,Velarde,Polanco,,
+14,Amistad Sniace,San Felices,,
+14,Textil Escudo,San Martín,,
+14,Ayron,Vimenor,,
+14,Arenas de Iguña,Cayón,,
+14,Rayo Santa Cruz,Tropezón,,
+14,At. Cueto,Marina Sport,,
+15,Marina Sport,Amistad Sniace,,
+15,San Felices,Velarde,,
+15,Polanco,Textil Escudo,,
+15,San Martín,Ayron,,
+15,Vimenor,Arenas de Iguña,,
+15,Cayón,Rayo Santa Cruz,,
+15,Tropezón,At. Cueto,,
+16,Velarde,Amistad Sniace,,
+16,Textil Escudo,San Felices,,
+16,Ayron,Polanco,,
+16,Arenas de Iguña,San Martín,,
+16,Rayo Santa Cruz,Vimenor,,
+16,At. Cueto,Cayón,,
+16,Tropezón,Marina Sport,,
+17,Marina Sport,Velarde,,
+17,Amistad Sniace,Textil Escudo,,
+17,San Felices,Ayron,,
+17,Polanco,Arenas de Iguña,,
+17,San Martín,Rayo Santa Cruz,,
+17,Vimenor,At. Cueto,,
+17,Cayón,Tropezón,,
+18,Textil Escudo,Velarde,,
+18,Ayron,Amistad Sniace,,
+18,Arenas de Iguña,San Felices,,
+18,Rayo Santa Cruz,Polanco,,
+18,At. Cueto,San Martín,,
+18,Tropezón,Vimenor,,
+18,Cayón,Marina Sport,,
+19,Velarde,Ayron,,
+19,Marina Sport,Textil Escudo,,
+19,Amistad Sniace,Arenas de Iguña,,
+19,San Felices,Rayo Santa Cruz,,
+19,Polanco,At. Cueto,,
+19,San Martín,Tropezón,,
+19,Vimenor,Cayón,,
+20,Ayron,Textil Escudo,,
+20,Arenas de Iguña,Velarde,,
+20,Rayo Santa Cruz,Amistad Sniace,,
+20,At. Cueto,San Felices,,
+20,Tropezón,Polanco,,
+20,Cayón,San Martín,,
+20,Vimenor,Marina Sport,,
+21,Velarde,Rayo Santa Cruz,,
+21,Marina Sport,Ayron,,
+21,Textil Escudo,Arenas de Iguña,,
+21,Amistad Sniace,At. Cueto,,
+21,San Felices,Tropezón,,
+21,Polanco,Cayón,,
+21,San Martín,Vimenor,,
+22,Arenas de Iguña,Ayron,,
+22,Rayo Santa Cruz,Textil Escudo,,
+22,At. Cueto,Velarde,,
+22,Tropezón,Amistad Sniace,,
+22,Cayón,San Felices,,
+22,Vimenor,Polanco,,
+22,San Martín,Marina Sport,,
+23,Velarde,Tropezón,,
+23,Marina Sport,Arenas de Iguña,,
+23,Ayron,Rayo Santa Cruz,,
+23,Textil Escudo,At. Cueto,,
+23,Amistad Sniace,Cayón,,
+23,San Felices,Vimenor,,
+23,Polanco,San Martín,,
+24,Rayo Santa Cruz,Arenas de Iguña,,
+24,At. Cueto,Ayron,,
+24,Tropezón,Textil Escudo,,
+24,Cayón,Velarde,,
+24,Vimenor,Amistad Sniace,,
+24,San Martín,San Felices,,
+24,Polanco,Marina Sport,,
+25,Velarde,Vimenor,,
+25,Rayo Santa Cruz,Marina Sport,,
+25,Arenas de Iguña,At. Cueto,,
+25,Ayron,Tropezón,,
+25,Textil Escudo,Cayón,,
+25,Amistad Sniace,San Martín,,
+25,San Felices,Polanco,,
+26,At. Cueto,Rayo Santa Cruz,,
+26,Tropezón,Arenas de Iguña,,
+26,Cayón,Ayron,,
+26,Vimenor,Textil Escudo,,
+26,San Martín,Velarde,,
+26,Polanco,Amistad Sniace,,
+26,Marina Sport,San Felices,,
+</script>
+
+<script>
+(() => {
+  const EQUIPO_POR_DEFECTO = 'Cayón';
+
+  // Colores: [principal, secundario]; patrón: liso, rayas, horizontal o mitad. Se pueden retocar aquí.
+  const CLUBES = {
+    'Cayón':           {nombre: 'E.D.M. Cayón "B"',                 colores: ['#1B7A3A', '#C8102E'], patron: 'mitad',  escudo: 'escudos/cayon.png'},
+    'Arenas de Iguña': {nombre: 'C.D.E. Arenas de Iguña',           colores: ['#1F4E9C', '#FFFFFF'], patron: 'liso',   escudo: 'escudos/arenas-iguna.png'},
+    'At. Cueto':       {nombre: 'At. España de Cueto "C"',          colores: ['#138A43', '#FFFFFF'], patron: 'rayas',  escudo: 'escudos/at-cueto.png'},
+    'Amistad Sniace':  {nombre: 'C.D. Amistad Sniace / Stefano "D"', colores: ['#C8102E', '#138A43'], patron: 'rayas', escudo: 'escudos/amistad-sniace.png'},
+    'Ayron':           {nombre: 'Ayron Club "B"',                   colores: ['#004D98', '#A50044'], patron: 'rayas',  escudo: 'escudos/ayron.png'},
+    'Marina Sport':    {nombre: 'C.D. Marina Sport "D"',            colores: ['#1E4FA3', '#FFFFFF'], patron: 'rayas',  escudo: 'escudos/marina-sport.png'},
+    'Polanco':         {nombre: 'Polanco C.F. "B"',                 colores: ['#2160B0', null],      patron: 'liso',   escudo: 'escudos/polanco.png'},
+    'Rayo Santa Cruz': {nombre: 'C.D.E. Rayo Santa Cruz "B"',       colores: ['#1C1C1E', '#E9A6B2'], patron: 'rayas',  escudo: 'escudos/rayo-santa-cruz.png'},
+    'San Felices':     {nombre: 'San Felices F.S. / Toño González Linares "A"', colores: ['#1E5FA8', '#E1B33B'], patron: 'liso', escudo: 'escudos/san-felices.png'},
+    'San Martín':      {nombre: 'S.D. San Martín de la Arena "B"',  colores: ['#FFFFFF', null],      patron: 'liso',   escudo: 'escudos/san-martin.png'},
+    'Textil Escudo':   {nombre: 'S.D. Textil Escudo "B"',           colores: ['#111111', '#FFFFFF'], patron: 'rayas',  escudo: 'escudos/textil-escudo.png'},
+    'Tropezón':        {nombre: 'C.D. Tropezón "A"',                colores: ['#FFD100', null],      patron: 'liso',   escudo: 'escudos/tropezon.png'},
+    'Velarde':         {nombre: 'Velarde C.F. "A"',                 colores: ['#1C1C1E', '#C8102E'], patron: 'rayas',  escudo: 'escudos/velarde.png'},
+    'Vimenor':         {nombre: 'C.F. Vimenor "D"',                 colores: ['#138A43', '#FFFFFF'], patron: 'rayas',  escudo: 'escudos/vimenor.png'}
+  };
+  const NOMBRES = Object.fromEntries(Object.entries(CLUBES).map(([k, v]) => [k, v.nombre]));
+
+  const rgb = (h) => { const m = /^#?([0-9a-f]{6})$/i.exec(h || ''); if (!m) return null; const n = parseInt(m[1], 16); return [n >> 16 & 255, n >> 8 & 255, n & 255]; };
+  const lum = (c) => { const f = (v) => { v /= 255; return v <= 0.03928 ? v / 12.92 : ((v + 0.055) / 1.055) ** 2.4; }; return 0.2126 * f(c[0]) + 0.7152 * f(c[1]) + 0.0722 * f(c[2]); };
+  const contraste = (a, b) => { const x = lum(a), y = lum(b); return (Math.max(x, y) + 0.05) / (Math.min(x, y) + 0.05); };
+  function aplicarColores(eq) {
+    const raiz = document.documentElement.style, cab = document.querySelector('.marcador').style;
+    const col = (CLUBES[eq] || {}).colores;
+    const c1 = col && rgb(col[0]), c2 = col && rgb(col[1]);
+    cab.removeProperty('background');
+    if (!c1) { ['--club-1', '--club-2', '--club-txt'].forEach((v) => { raiz.removeProperty(v); cab.removeProperty(v); }); return; }
+    const a = col[0], b = col[1] || col[0], patron = (CLUBES[eq] || {}).patron;
+    const ancho = Math.round(Math.min(80, Math.max(36, window.innerWidth * 0.07))) + 'px';
+    let fondo = a;
+    if (patron === 'rayas') fondo = `repeating-linear-gradient(90deg, ${a} 0 ${ancho}, ${b} ${ancho} ${2 * parseInt(ancho)}px)`;
+    else if (patron === 'horizontal') fondo = `repeating-linear-gradient(180deg, ${a} 0 48px, ${b} 48px 96px)`;
+    else if (patron === 'mitad') fondo = `linear-gradient(90deg, ${a} 0 50%, ${b} 50%)`;
+    cab.setProperty('background', fondo);
+    const blanco = [255, 255, 255], negro = [23, 32, 26];
+    const txt = contraste(c1, blanco) >= contraste(c1, negro) ? blanco : negro;
+    const acento = c2 && contraste(c1, c2) >= 2.2 ? c2 : txt;
+    const css = (c) => `rgb(${c.join(',')})`;
+    for (const s of [raiz, cab]) { s.setProperty('--club-1', css(c1)); s.setProperty('--club-2', css(acento)); s.setProperty('--club-txt', css(txt)); }
+    document.querySelector('meta[name=theme-color]')?.setAttribute('content', css(c1));
+  }
+  function aplicarEscudo(eq) {
+    const img = document.getElementById('escudo'), ruta = (CLUBES[eq] || {}).escudo;
+    img.hidden = true;
+    img.onload = () => { img.hidden = false; };
+    img.onerror = () => { img.hidden = true; };
+    if (ruta) { img.alt = 'Escudo de ' + (NOMBRES[eq] || eq); img.src = ruta; } else img.removeAttribute('src');
+    // escudo grande y translúcido de fondo en la cabecera
+    const cab = document.querySelector('.marcador').style;
+    if (ruta) cab.setProperty('--escudo-fondo', `url("${ruta}")`); else cab.removeProperty('--escudo-fondo');
+  }
+
+  const filas = document.getElementById('datos').textContent.trim().split('\n').slice(1);
+  const partidos = filas.map((l) => {
+    const [j, local, visitante, gl, gv] = l.split(',').map((s) => s.trim());
+    return {j: Number(j), local, visitante, gl: gl === '' ? null : Number(gl), gv: gv === '' ? null : Number(gv)};
+  });
+  const jugados = partidos.filter((p) => p.gl !== null);
+  const pendientes = partidos.filter((p) => p.gl === null);
+  const equipos = [...new Set(partidos.flatMap((p) => [p.local, p.visitante]))].sort((a, b) => a.localeCompare(b, 'es'));
+  const ultimaJ = jugados.reduce((m, p) => Math.max(m, p.j), 0);
+  const esc = (s) => String(s).replace(/[&<>"']/g, (c) => ({'&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;'}[c]));
+  const fmt1 = new Intl.NumberFormat('es', {maximumFractionDigits: 1, minimumFractionDigits: 1});
+
+  function clasificacion(hasta = Infinity) {
+    const t = Object.fromEntries(equipos.map((e) => [e, {equipo: e, pj: 0, v: 0, e: 0, d: 0, gf: 0, gc: 0}]));
+    for (const p of jugados) {
+      if (p.j > hasta) continue;
+      for (const [n, f, c] of [[p.local, p.gl, p.gv], [p.visitante, p.gv, p.gl]]) {
+        const r = t[n]; r.pj++; r.gf += f; r.gc += c;
+        if (f > c) r.v++; else if (f === c) r.e++; else r.d++;
+      }
+    }
+    return Object.values(t).map((r) => ({...r, dg: r.gf - r.gc, pts: r.v * 3 + r.e}))
+      .sort((x, y) => y.pts - x.pts || y.dg - x.dg || y.gf - x.gf || x.equipo.localeCompare(y.equipo, 'es'))
+      .map((r, i) => ({pos: i + 1, ...r}));
+  }
+
+  const probs = (() => {
+    const K = 3, s = Object.fromEntries(equipos.map((e) => [e, {gf: 0, gc: 0, pj: 0}]));
+    let gl = 0, gv = 0;
+    for (const p of jugados) {
+      s[p.local].gf += p.gl; s[p.local].gc += p.gv; s[p.local].pj++;
+      s[p.visitante].gf += p.gv; s[p.visitante].gc += p.gl; s[p.visitante].pj++;
+      gl += p.gl; gv += p.gv;
+    }
+    const n = jugados.length || 1, media = (gl + gv) / (2 * n) || 1, mL = gl / n || 1, mV = gv / n || 1;
+    const ata = (e) => (s[e].gf / media + K) / (s[e].pj + K);
+    const def = (e) => (s[e].gc / media + K) / (s[e].pj + K);
+    const pois = (l) => { const o = []; let f = Math.exp(-l); for (let k = 0; k <= 25; k++) { o.push(f); f *= l / (k + 1); } return o; };
+    const m = new Map();
+    for (const p of pendientes) {
+      const a = pois(mL * ata(p.local) * def(p.visitante)), b = pois(mV * ata(p.visitante) * def(p.local));
+      let w = 0, d = 0, l = 0;
+      a.forEach((x, i) => b.forEach((y, j) => { if (i > j) w += x * y; else if (i === j) d += x * y; else l += x * y; }));
+      const t = w + d + l;
+      m.set(p, {pl: w / t, pe: d / t, pv: l / t});
+    }
+    return m;
+  })();
+
+  const actual = clasificacion();
+
+  // Proyección: se simula el resto de la liga 10.000 veces. En cada partido pendiente sale
+  // victoria, empate o derrota según sus probabilidades (3, 1 o 0 puntos, nunca fracciones).
+  // Para cada equipo se toma la mediana de puntos: un total entero y alcanzable.
+  const VUELTA = Math.max(...partidos.map((p) => p.j)) / 2;  // jornadas de la primera vuelta
+  const proyeccion = (() => {
+    const N = 10000;
+    let semilla = 20262027;  // semilla fija: el resultado no cambia al recargar la página
+    const azar = () => { semilla |= 0; semilla = semilla + 0x6D2B79F5 | 0; let t = Math.imul(semilla ^ semilla >>> 15, 1 | semilla); t = t + Math.imul(t ^ t >>> 7, 61 | t) ^ t; return ((t ^ t >>> 14) >>> 0) / 4294967296; };
+    const idx = Object.fromEntries(equipos.map((e, i) => [e, i]));
+    const base = equipos.map((e) => actual.find((c) => c.equipo === e).pts);
+    const pend = [...probs].map(([p, q]) => ({ l: idx[p.local], v: idx[p.visitante], pl: q.pl, pe: q.pe, v15: p.j <= VUELTA }));
+    const s15 = equipos.map(() => new Uint16Array(N)), s30 = equipos.map(() => new Uint16Array(N));
+    const t15 = new Array(equipos.length), t30 = new Array(equipos.length);
+    for (let n = 0; n < N; n++) {
+      for (let e = 0; e < equipos.length; e++) { t15[e] = base[e]; t30[e] = base[e]; }
+      for (const m of pend) {
+        const x = azar(), a = x < m.pl ? 3 : x < m.pl + m.pe ? 1 : 0, b = a === 3 ? 0 : a === 1 ? 1 : 3;
+        t30[m.l] += a; t30[m.v] += b;
+        if (m.v15) { t15[m.l] += a; t15[m.v] += b; }
+      }
+      for (let e = 0; e < equipos.length; e++) { s15[e][n] = t15[e]; s30[e][n] = t30[e]; }
+    }
+    const mediana = (arr) => { const o = [...arr].sort((a, b) => a - b); return o[Math.floor(N / 2)]; };
+    const media = (arr) => arr.reduce((a, b) => a + b, 0) / N;
+    const rows = equipos.map((e, i) => {
+      const c = actual.find((x) => x.equipo === e);
+      return { equipo: e, pts: c.pts, dg: c.dg, e15: mediana(s15[i]), e30: mediana(s30[i]), m15: media(s15[i]), m30: media(s30[i]) };
+    });
+    for (const k of ['15', '30']) [...rows].sort((a, b) => b['e' + k] - a['e' + k] || b['m' + k] - a['m' + k] || b.dg - a.dg || a.equipo.localeCompare(b.equipo, 'es')).forEach((x, i) => { x['pe' + k] = i + 1; });
+    return rows.sort((a, b) => a.pe15 - b.pe15);
+  })();
+
+  const evolucion = (eq) => {
+    const out = [];
+    for (let j = 1; j <= ultimaJ; j++) {
+      const c = clasificacion(j).find((r) => r.equipo === eq);
+      out.push({j, pos: c.pos, pts: c.pts});
+    }
+    return out;
+  };
+
+  const partidosDe = (eq) => partidos.filter((p) => p.local === eq || p.visitante === eq).sort((a, b) => a.j - b.j).map((p) => {
+    const casa = p.local === eq, jug = p.gl !== null;
+    const gf = jug ? (casa ? p.gl : p.gv) : null, gc = jug ? (casa ? p.gv : p.gl) : null;
+    const q = probs.get(p);
+    return {
+      j: p.j, casa, rival: casa ? p.visitante : p.local, marcador: jug ? p.gl + '-' + p.gv : '–', gf, gc,
+      res: !jug ? '' : gf > gc ? 'V' : gf === gc ? 'E' : 'D',
+      pV: q ? (casa ? q.pl : q.pv) : null, pE: q ? q.pe : null, pD: q ? (casa ? q.pv : q.pl) : null
+    };
+  });
+
+  const pct = (x) => Math.round(100 * x);
+  const ASCIENDEN = 0, DESCIENDEN = 0;  // pon aquí cuántos suben y bajan si la federación lo establece
+  const zona = (pos, texto = pos) => {
+    const n = equipos.length;
+    const cls = pos <= ASCIENDEN ? 'asc' : pos > n - DESCIENDEN ? 'desc' : '';
+    return cls ? `<span class="zona ${cls}" title="${cls === 'asc' ? 'Ascenso' : 'Descenso'}">${texto}</span>` : String(texto);
+  };
+
+  function grafPosicion(datos, n) {
+    if (!datos.length) return '<p class="nota">Aún no hay jornadas jugadas.</p>';
+    const W = 360, H = 210, m = {t: 14, r: 30, b: 26, l: 30};
+    const x = (i) => m.l + (datos.length === 1 ? (W - m.l - m.r) / 2 : i * (W - m.l - m.r) / (datos.length - 1));
+    const y = (p) => m.t + (p - 1) * (H - m.t - m.b) / (n - 1);
+    let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Posición por jornada">`;
+    for (const t of [1, 4, 8, 12, n]) s += `<line x1="${m.l}" x2="${W - m.r}" y1="${y(t)}" y2="${y(t)}" stroke="var(--linea)"/><text x="${m.l - 6}" y="${y(t)}" dy="0.32em" text-anchor="end">${t}º</text>`;
+    const paso = Math.ceil(datos.length / 10);
+    datos.forEach((d, i) => { if (i % paso === 0 || i === datos.length - 1) s += `<text x="${x(i)}" y="${H - 6}" text-anchor="middle">J${d.j}</text>`; });
+    s += `<polyline fill="none" stroke="var(--cesped-2)" stroke-width="2.5" stroke-linejoin="round" stroke-linecap="round" points="${datos.map((d, i) => x(i) + ',' + y(d.pos)).join(' ')}"/>`;
+    datos.forEach((d, i) => {
+      s += `<circle cx="${x(i)}" cy="${y(d.pos)}" r="4" fill="var(--cesped-2)"><title>Jornada ${d.j}: ${d.pos}º, ${d.pts} pts</title></circle>`;
+      if (datos.length <= 15) s += `<text x="${x(i)}" y="${y(d.pos) - 9}" text-anchor="middle" style="fill:var(--tinta);font-weight:600">${d.pos}</text>`;
+    });
+    return s + '</svg>';
+  }
+
+  function grafGoles(datos) {
+    const d = datos.filter((p) => p.res);
+    if (!d.length) return '<p class="nota">Aún no hay partidos jugados.</p>';
+    const W = 360, H = 210, m = {t: 18, r: 6, b: 26, l: 6};
+    const arriba = Math.max(1, ...d.map((p) => p.gf)), abajo = Math.max(1, ...d.map((p) => p.gc));
+    const alto = H - m.t - m.b - 14, cero = m.t + alto * arriba / (arriba + abajo), u = alto / (arriba + abajo);
+    const banda = (W - m.l - m.r) / d.length, ancho = Math.min(28, banda * 0.65);
+    let s = `<svg viewBox="0 0 ${W} ${H}" role="img" aria-label="Goles por partido">`;
+    s += `<line x1="${m.l}" x2="${W - m.r}" y1="${cero}" y2="${cero}" stroke="var(--tinta-2)"/>`;
+    d.forEach((p, i) => {
+      const cx = m.l + banda * (i + 0.5), x0 = cx - ancho / 2;
+      const tit = `<title>J${p.j}, ${esc(p.rival)} (${p.casa ? 'casa' : 'fuera'}): ${p.marcador}</title>`;
+      if (p.gf) s += `<rect x="${x0}" y="${cero - p.gf * u}" width="${ancho}" height="${p.gf * u}" rx="3" fill="var(--v)">${tit}</rect><text x="${cx}" y="${cero - p.gf * u - 4}" text-anchor="middle" style="fill:var(--tinta);font-weight:600">${p.gf}</text>`;
+      if (p.gc) s += `<rect x="${x0}" y="${cero}" width="${ancho}" height="${p.gc * u}" rx="3" fill="var(--d)">${tit}</rect><text x="${cx}" y="${cero + p.gc * u + 13}" text-anchor="middle" style="fill:var(--tinta);font-weight:600">${p.gc}</text>`;
+      s += `<text x="${cx}" y="${H - 4}" text-anchor="middle">J${p.j}</text>`;
+    });
+    return s + '</svg>';
+  }
+
+  function pintar(eq) {
+    const c = actual.find((r) => r.equipo === eq);
+    const ps = partidosDe(eq), jug = ps.filter((p) => p.res);
+    const ptsDe = (a) => a.reduce((s, p) => s + (p.res === 'V' ? 3 : p.res === 'E' ? 1 : 0), 0);
+    const nombre = NOMBRES[eq] || eq;
+    aplicarColores(eq);
+    aplicarEscudo(eq);
+    document.getElementById('nombre').textContent = nombre;
+    document.title = nombre + ' · Tercera Prebenjamín Sala Grupo B';
+    document.getElementById('actualizado').textContent = 'Actualizado tras la jornada ' + ultimaJ;
+    document.getElementById('c-n').textContent = equipos.length;
+    document.getElementById('c-pos').textContent = c.pos + 'º';
+    document.getElementById('c-pts').textContent = c.pts;
+    document.getElementById('c-ved').textContent = `${c.v} V · ${c.e} E · ${c.d} D`;
+    document.getElementById('c-goles').textContent = c.gf + '–' + c.gc;
+    document.getElementById('c-dg').textContent = 'Diferencia ' + (c.dg > 0 ? '+' : '') + c.dg;
+    document.getElementById('c-cf').textContent = ptsDe(jug.filter((p) => p.casa)) + ' / ' + ptsDe(jug.filter((p) => !p.casa));
+    document.getElementById('c-racha').innerHTML = jug.slice(-5).map((p) => `<span class="ficha ${p.res}" title="J${p.j} ${esc(p.rival)} ${p.marcador}">${p.res}</span>`).join('');
+
+    const prox = ps.find((p) => !p.res);
+    document.getElementById('proximo-cuerpo').innerHTML = prox ? `
+      <div class="cruce">${esc(prox.casa ? nombre + ' – ' + prox.rival : prox.rival + ' – ' + nombre)}<small>Jornada ${prox.j}, ${prox.casa ? 'en casa' : 'fuera'}</small></div>
+      <div class="barra-prob" role="img" aria-label="Victoria ${pct(prox.pV)}%, empate ${pct(prox.pE)}%, derrota ${pct(prox.pD)}%">
+        <span style="width:${pct(prox.pV)}%;background:var(--v)">${pct(prox.pV)}%</span>
+        <span style="width:${pct(prox.pE)}%;background:var(--e)">${pct(prox.pE)}%</span>
+        <span style="width:${pct(prox.pD)}%;background:var(--d)">${pct(prox.pD)}%</span>
+      </div>
+      <div class="leyenda"><span><i style="background:var(--v)"></i>Victoria</span><span><i style="background:var(--e)"></i>Empate</span><span><i style="background:var(--d)"></i>Derrota</span></div>`
+      : '<p class="nota">No quedan partidos pendientes.</p>';
+
+    document.getElementById('graf-pos').innerHTML = grafPosicion(evolucion(eq), equipos.length);
+    document.getElementById('graf-goles').innerHTML = grafGoles(ps);
+
+    document.getElementById('t-partidos').textContent = 'Partidos de ' + nombre;
+    document.querySelector('#tabla-partidos tbody').innerHTML = ps.map((p) => `
+      <tr class="${p.res ? '' : 'pendiente'}"><td>${p.j}</td><td class="izq"><span class="largo">${p.casa ? 'Casa' : 'Fuera'}</span><span class="corto" title="${p.casa ? 'Casa' : 'Fuera'}">${p.casa ? 'C' : 'F'}</span></td><td class="izq">${esc(p.rival)}</td><td>${p.marcador}</td>
+      <td>${p.res ? `<span class="ficha ${p.res}">${p.res}</span>` : ''}</td>
+      <td class="prob pv">${p.pV === null ? '' : pct(p.pV)}</td><td class="prob">${p.pE === null ? '' : pct(p.pE)}</td><td class="prob">${p.pD === null ? '' : pct(p.pD)}</td></tr>`).join('');
+
+    document.querySelector('#tabla-clas tbody').innerHTML = actual.map((r) => `
+      <tr class="${r.equipo === eq ? 'yo' : ''}"><td>${zona(r.pos)}</td><td class="izq">${esc(r.equipo)}</td><td>${r.pj}</td>
+      <td class="ocultar-movil">${r.v}</td><td class="ocultar-movil">${r.e}</td><td class="ocultar-movil">${r.d}</td><td class="ocultar-movil">${r.gf}</td><td class="ocultar-movil">${r.gc}</td>
+      <td>${r.dg > 0 ? '+' : ''}${r.dg}</td><td><b>${r.pts}</b></td></tr>`).join('');
+
+    const posAct = Object.fromEntries(actual.map((r) => [r.equipo, r.pos]));
+    for (const [id, k] of [['tabla-v1', '15'], ['tabla-fin', '30']]) {
+      document.querySelector('#' + id + ' tbody').innerHTML = [...proyeccion].sort((a, b) => a['pe' + k] - b['pe' + k]).map((r) => {
+        const pos = r['pe' + k], d = posAct[r.equipo] - pos;
+        const mov = d > 0 ? `<span class="mov sube" title="Sube ${d}">▲${d}</span>` : d < 0 ? `<span class="mov baja" title="Baja ${-d}">▼${-d}</span>` : '<span class="mov igual" title="Igual">=</span>';
+        return `<tr class="${r.equipo === eq ? 'yo' : ''}"><td>${zona(pos)}</td><td class="izq">${esc(r.equipo)}</td><td>${r.pts}</td><td><b>${Math.round(r['e' + k])}</b></td><td>${mov}</td></tr>`;
+      }).join('');
+    }
+  }
+
+
+  // JORNADA EN CURSO (data/calendario.json lo genera scripts/actualizar.py)
+  let calendario = null;
+  async function leerCalendario() {
+    if (calendario) return calendario;
+    try {
+      const r = await fetch('data/calendario.json?v=' + Date.now(), { cache: 'no-store' });
+      calendario = r.ok ? await r.json() : {};
+    } catch (e) { calendario = {}; }
+    return calendario;
+  }
+  const hoyISO = () => { const d = new Date(); return d.getFullYear() + '-' + String(d.getMonth() + 1).padStart(2, '0') + '-' + String(d.getDate()).padStart(2, '0'); };
+  const ultimaJornada = Math.max(...partidos.map((p) => p.j));
+
+  function jornadaEnCurso(cal) {
+    if (!ultimaJ) return 1;
+    const deM = partidos.filter((p) => p.j === ultimaJ);
+    if (deM.every((p) => p.gl !== null)) return Math.min(ultimaJ + 1, ultimaJornada);
+    // Si todas las fechas de esa jornada ya pasaron (partido aplazado), se pasa a la siguiente
+    const fechas = Object.values(cal[ultimaJ] || {}).map((x) => x.fecha).filter(Boolean).sort();
+    if (fechas.length && fechas[fechas.length - 1] < hoyISO() && ultimaJ < ultimaJornada) return ultimaJ + 1;
+    return ultimaJ;
+  }
+
+  const fmtDia = new Intl.DateTimeFormat('es', { weekday: 'short', day: 'numeric', month: 'short' });
+  const fmtDiaLargo = new Intl.DateTimeFormat('es', { weekday: 'long', day: 'numeric', month: 'long' });
+  const fecha = (iso, f = fmtDia) => f.format(new Date(iso + 'T12:00:00'));
+  const pts1 = (x) => String(Math.round(x));
+  const etq = (x) => (pct(x) >= 10 ? pct(x) + '%' : '');
+
+  // Un partido está "en juego" desde su hora de inicio hasta que hay resultado (acta cerrada en la federación)
+  function enJuego(p) {
+    if (p.gl !== null) return false;
+    if (p.cal.estado === 'en_juego') return true;
+    if (!p.cal.fecha || !p.cal.hora || p.cal.aprox) return false;
+    return new Date(p.cal.fecha + 'T' + p.cal.hora + ':00') <= new Date();
+  }
+
+  let vistaJ = 'actual';
+  document.querySelectorAll('[data-vista-j]').forEach((b) => b.addEventListener('click', () => {
+    vistaJ = b.dataset.vistaJ;
+    pintarJornada(document.getElementById('equipo').value);
+  }));
+
+  function pintarJornada(eq) {
+    if (!calendario) return;
+    const J = jornadaEnCurso(calendario), cal = calendario[J] || {};
+    const ps = partidos.filter((p) => p.j === J).map((p) => ({ ...p, cal: cal[p.local + '|' + p.visitante] || {}, q: probs.get(p) }));
+    const orden = (p) => (p.cal.fecha || '9999') + (p.cal.hora || '99:99');
+    ps.sort((a, b) => orden(a).localeCompare(orden(b)) || a.local.localeCompare(b.local, 'es'));
+    const hechos = ps.filter((p) => p.gl !== null).length;
+
+    // Pestañas: jornada en curso / próxima jornada
+    const haySig = J < ultimaJornada;
+    if (!haySig) vistaJ = 'actual';
+    const JV = vistaJ === 'sig' ? J + 1 : J, calV = calendario[JV] || {};
+    const psV = JV === J ? ps : partidos.filter((p) => p.j === JV).map((p) => ({ ...p, cal: calV[p.local + '|' + p.visitante] || {}, q: probs.get(p) }))
+      .sort((a, b) => orden(a).localeCompare(orden(b)) || a.local.localeCompare(b.local, 'es'));
+    const hechosV = psV.filter((p) => p.gl !== null).length;
+    document.getElementById('btn-j-actual').textContent = 'Jornada ' + J;
+    document.getElementById('btn-j-sig').textContent = 'Próxima · J' + (J + 1);
+    document.getElementById('btn-j-sig').hidden = !haySig;
+    document.querySelectorAll('[data-vista-j]').forEach((b) => b.setAttribute('aria-pressed', String(b.dataset.vistaJ === vistaJ)));
+
+    document.getElementById('t-jornada').textContent = 'Jornada ' + JV;
+    document.getElementById('t-clas-jornada').textContent = 'Clasificación prevista tras la J' + J;
+    document.getElementById('th-jornada').textContent = 'J' + J;
+    const est = document.getElementById('estado-jornada');
+    // Rojo «En juego» solo si hay algún partido disputándose ahora; si no, cuántos se han jugado
+    const vivos = psV.filter((p) => enJuego(p)).length;
+    const conHora = psV.filter((p) => p.cal.fecha && p.cal.hora && !p.cal.aprox).length;
+    est.textContent = vivos ? `En juego · ${vivos} ${vivos === 1 ? 'partido' : 'partidos'}`
+      : hechosV === psV.length ? 'Terminada'
+      : JV !== J ? (conHora ? `${conHora} de ${psV.length} con horario` : 'Horarios pendientes')
+      : hechosV === 0 ? 'Por jugar'
+      : `${hechosV} de ${psV.length} jugados`;
+    est.className = 'estado-j' + (vivos ? ' vivo' : '');
+    const dias = [...new Set(psV.map((p) => p.cal.fecha).filter(Boolean))].sort();
+    document.getElementById('nota-jornada').textContent = dias.length
+      ? 'Se juega ' + dias.map((d) => fecha(d, fmtDiaLargo)).join(' y ') + '. Las barras son las probabilidades de cada resultado.'
+      : 'Horarios aún no publicados por la federación. Las barras son las probabilidades de cada resultado.';
+
+    document.getElementById('lista-jornada').innerHTML = psV.map((p) => {
+      const c = p.cal, yo = p.local === eq || p.visitante === eq;
+      const meta = [
+        p.gl !== null ? '<span class="tag-final">Final</span>' : enJuego(p) ? '<span class="tag-vivo">En juego</span>' : '',
+        c.fecha ? `<b>${esc(fecha(c.fecha))}</b>` : '<b>Fecha por confirmar</b>',
+        c.hora && !c.aprox ? `<b>${esc(c.hora)} h</b>` : '',
+        c.campo ? esc(c.campo) + (c.ciudad ? ' (' + esc(c.ciudad) + ')' : '') : ''
+      ].filter(Boolean).join('<span aria-hidden="true">·</span>');
+      const centro = p.gl !== null ? `<button type="button" class="pj-res abre" data-j="${p.j}" data-l="${esc(p.local)}" data-v="${esc(p.visitante)}" aria-expanded="false" title="Ver goleadores">${p.gl}–${p.gv}<span class="flecha" aria-hidden="true">▾</span></button>` : enJuego(p) ? '<span class="pj-res vivo">· · ·</span>' : '<span class="pj-res pend">vs</span>';
+      const barra = p.gl === null && p.q && !enJuego(p) ? `
+        <div class="barra-prob mini" role="img" aria-label="${esc(p.local)} ${pct(p.q.pl)}%, empate ${pct(p.q.pe)}%, ${esc(p.visitante)} ${pct(p.q.pv)}%">
+          <span style="width:${pct(p.q.pl)}%;background:var(--p1)" title="${pct(p.q.pl)}%">${etq(p.q.pl)}</span>
+          <span style="width:${pct(p.q.pe)}%;background:var(--e)" title="${pct(p.q.pe)}%">${etq(p.q.pe)}</span>
+          <span style="width:${pct(p.q.pv)}%;background:var(--p2)" title="${pct(p.q.pv)}%">${etq(p.q.pv)}</span>
+        </div>` : '';
+      return `<div class="pj${yo ? ' yo' : ''}"><div class="pj-meta">${meta}</div>
+        <div class="pj-cruce"><span>${esc(p.local)}</span>${centro}<span class="vis">${esc(p.visitante)}</span></div>${barra}${p.gl !== null ? '<div class="pj-goles" hidden></div>' : ''}</div>`;
+    }).join('') || '<p class="nota">No hay partidos en esta jornada.</p>';
+    if (hechosV) document.getElementById('nota-jornada').textContent += ' Toca un resultado para ver los goleadores.';
+
+    // Clasificación: la de antes de la jornada + resultado real o puntos esperados de esta jornada
+    const antes = clasificacion(J - 1);
+    const fila = Object.fromEntries(antes.map((r) => [r.equipo, { equipo: r.equipo, posAntes: r.pos, antes: r.pts, dg: r.dg, extra: 0, real: null }]));
+    for (const p of ps) {
+      if (p.gl !== null) {
+        const pl = p.gl > p.gv ? 3 : p.gl === p.gv ? 1 : 0, pv = p.gv > p.gl ? 3 : p.gl === p.gv ? 1 : 0;
+        Object.assign(fila[p.local], { extra: pl, real: true }); fila[p.local].dg += p.gl - p.gv;
+        Object.assign(fila[p.visitante], { extra: pv, real: true }); fila[p.visitante].dg += p.gv - p.gl;
+      } else if (p.q) {
+        // resultado más probable: victoria local, empate o victoria visitante
+        const mx = Math.max(p.q.pl, p.q.pe, p.q.pv);
+        const [a, b] = mx === p.q.pl ? [3, 0] : mx === p.q.pv ? [0, 3] : [1, 1];
+        Object.assign(fila[p.local], { extra: a, real: false, prob: mx });
+        Object.assign(fila[p.visitante], { extra: b, real: false, prob: mx });
+      }
+    }
+    const tabla = Object.values(fila).map((r) => ({ ...r, total: r.antes + r.extra }))
+      .sort((a, b) => b.total - a.total || b.dg - a.dg || a.equipo.localeCompare(b.equipo, 'es'))
+      .map((r, i) => ({ ...r, pos: i + 1 }));
+    const todoReal = tabla.every((r) => r.real !== false);
+    document.getElementById('nota-clas-jornada').textContent = todoReal && hechos
+      ? 'Jornada terminada: clasificación con los resultados reales.'
+      : 'Partidos jugados con su resultado real; los pendientes, con su resultado más probable (3, 1 o 0 puntos).';
+    document.querySelector('#tabla-clas-jornada tbody').innerHTML = tabla.map((r) => {
+      const d = r.posAntes - r.pos;
+      const mov = d > 0 ? `<span class="mov sube" title="Sube ${d}">▲${d}</span>` : d < 0 ? `<span class="mov baja" title="Baja ${-d}">▼${-d}</span>` : '<span class="mov igual" title="Igual">=</span>';
+      const ext = r.real === true ? `<td class="real">+${r.extra}</td>` : r.real === false ? `<td class="esperado" title="Resultado más probable (${pct(r.prob)}%)">+${r.extra}</td>` : '<td>–</td>';
+      return `<tr class="${r.equipo === eq ? 'yo' : ''}"><td>${zona(r.pos)}</td><td class="izq">${esc(r.equipo)}</td><td>${r.antes}</td>${ext}
+        <td><b>${r.antes + r.extra}</b></td><td>${mov}</td></tr>`;
+    }).join('');
+  }
+
+  // ESTADÍSTICAS DE JUGADORES DESDE data/actas.json (filtradas por el equipo elegido)
+  let actasCache = null;
+
+  // Desplegable de goleadores al tocar el resultado de un partido terminado
+  function htmlGoles(acta) {
+    if (!acta) return '<p class="pj-goles-nada">El acta de este partido aún no está disponible.</p>';
+    const gs = [...(acta.goles || [])].sort((a, b) => (a.minuto ?? 999) - (b.minuto ?? 999));
+    if (!gs.length) return '<p class="pj-goles-nada">Partido sin goles.</p>';
+    let gl = 0, gv = 0;
+    return '<ol class="lista-goles">' + gs.map((g) => {
+      const local = g.equipo === acta.local;
+      if (local) gl++; else gv++;
+      const extra = g.tipo === 'penalti' ? ' <small>(pen.)</small>' : g.tipo === 'propia' ? ' <small>(p.p.)</small>' : '';
+      const nom = `<span class="gol-nom">${esc(nombreBonito(g.jugador))}${extra}</span>`;
+      const mid = `<span class="gol-min">${g.minuto != null ? g.minuto + "'" : '–'}<b>${gl}-${gv}</b></span>`;
+      return `<li class="${local ? 'L' : 'V'}">${local ? nom : '<span></span>'}${mid}${local ? '<span></span>' : nom}</li>`;
+    }).join('') + '</ol>';
+  }
+
+  document.getElementById('lista-jornada').addEventListener('click', async (ev) => {
+    const b = ev.target.closest('button.abre');
+    if (!b) return;
+    const caja = b.closest('.pj').querySelector('.pj-goles');
+    const abrir = b.getAttribute('aria-expanded') !== 'true';
+    b.setAttribute('aria-expanded', String(abrir));
+    caja.hidden = !abrir;
+    if (abrir && !caja.dataset.listo) {
+      caja.innerHTML = '<p class="pj-goles-nada">Cargando…</p>';
+      try {
+        const actas = await leerActas();
+        const acta = Object.values(actas).find((a) => a.jornada === Number(b.dataset.j) && a.local === b.dataset.l && a.visitante === b.dataset.v);
+        caja.innerHTML = htmlGoles(acta);
+        caja.dataset.listo = '1';
+      } catch (e) {
+        caja.innerHTML = '<p class="pj-goles-nada">No se pudieron cargar las actas.</p>';
+      }
+    }
+  });
+
+  async function leerActas() {
+    if (actasCache) return actasCache;
+    // no-store + parámetro para no quedarnos con una copia antigua en la caché del navegador
+    const r = await fetch('data/actas.json?v=' + Date.now(), { cache: 'no-store' });
+    if (!r.ok) throw new Error('HTTP ' + r.status);
+    actasCache = await r.json();
+    return actasCache;
+  }
+
+  function nombreBonito(n) {
+    // "SAINZ SAINZ, HUGO" -> "Hugo Sainz Sainz"
+    const [ap, no] = String(n).split(',').map((t) => t.trim());
+    const tit = (t) => t.toLowerCase().replace(/(^|[\s-])\p{L}/gu, (c) => c.toUpperCase());
+    return no ? tit(no) + ' ' + tit(ap) : tit(ap);
+  }
+
+  function filasRanking(cuenta, vacio, equipoActivo) {
+    // cuenta: { "EQUIPO|NOMBRE": { equipo, nombre, n } }
+    const orden = Object.values(cuenta).sort((a, b) => b.n - a.n || a.nombre.localeCompare(b.nombre, 'es'));
+    if (!orden.length) return `<tr><td class="izq" colspan="2">${vacio}</td></tr>`;
+    return orden.map((j) => `<tr class="${j.equipo === equipoActivo ? 'yo' : ''}"><td class="izq">${esc(nombreBonito(j.nombre))} <small style="opacity:.6">· ${esc(NOMBRES[j.equipo] || j.equipo)}</small></td><td><b>${j.n}</b></td></tr>`).join('');
+  }
+
+  function sumar(cuenta, equipo, nombre) {
+    const k = equipo + '|' + nombre;
+    (cuenta[k] = cuenta[k] || { equipo, nombre, n: 0 }).n += 1;
+  }
+
+  // Cuenta TODAS las actas (todos los equipos); se resaltan los jugadores del equipo elegido
+  // Filtros de las tablas de jugadores
+  let filtroGoles = 'club';
+  let ultimasCuentas = null;
+
+  function soloEquipo(cuenta, equipo) {
+    return Object.fromEntries(Object.entries(cuenta).filter(([, j]) => j.equipo === equipo));
+  }
+
+  function pintarJugadores() {
+    if (!ultimasCuentas) return;
+    const { goles, partidos, equipoActivo } = ultimasCuentas;
+    const corto = equipoActivo;
+    const club = filtroGoles === 'club';
+    document.getElementById('btn-gol-club').textContent = corto;
+    document.getElementById('nota-goleadores').textContent = club
+      ? 'Goles de los jugadores de ' + (NOMBRES[equipoActivo] || equipoActivo) + ' según las actas oficiales.'
+      : 'Goles de todos los equipos según las actas oficiales. En color, los del equipo elegido.';
+    document.getElementById('nota-participacion').textContent =
+      'Convocatorias de los jugadores de ' + (NOMBRES[equipoActivo] || equipoActivo) + ' según las actas oficiales.';
+    document.getElementById('lista-goleadores').innerHTML = club
+      ? filasRanking(soloEquipo(goles, equipoActivo), 'Este equipo no tiene goles registrados todavía.', '')
+      : filasRanking(goles, 'No hay goles registrados todavía.', equipoActivo);
+    document.getElementById('lista-participacion').innerHTML =
+      filasRanking(soloEquipo(partidos, equipoActivo), 'No hay alineaciones registradas todavía.', '');
+  }
+
+
+  // ÁRBITROS del equipo elegido: se rellena solo con cada acta nueva que trae su árbitro
+  let actasArb = null, equipoArb = null;
+  const nombreArbitro = (n) => String(n || '').replace(/\s+,/g, ',').replace(/\s+/g, ' ').trim();
+
+  function pintarArbitros() {
+    if (!actasArb) return;
+    const eq = equipoArb, nombre = NOMBRES[eq] || eq;
+    const marc = new Map(partidos.filter((p) => p.gl !== null).map((p) => [p.j + '|' + p.local + '|' + p.visitante, [p.gl, p.gv]]));
+    const tabla = {};
+    for (const a of Object.values(actasArb)) {
+      const nom = nombreArbitro(a.arbitro);
+      if (!nom || (a.local !== eq && a.visitante !== eq)) continue;
+      let m = marc.get(a.jornada + '|' + a.local + '|' + a.visitante);
+      if (!m) {  // si el partido no está en el cuadro, se cuentan los goles del acta
+        const gs = a.goles || [];
+        m = [gs.filter((g) => g.equipo === a.local).length, gs.filter((g) => g.equipo === a.visitante).length];
+      }
+      const [gf, gc] = a.local === eq ? m : [m[1], m[0]];
+      const res = gf > gc ? 'V' : gf === gc ? 'E' : 'D';
+      const r = (tabla[nom] = tabla[nom] || { nom, pj: 0, V: 0, E: 0, D: 0, js: [] });
+      r.pj++; r[res]++;
+      r.js.push({ j: a.jornada, res, txt: `J${a.jornada}: ${a.local} ${m[0]}-${m[1]} ${a.visitante}` });
+    }
+    const filas = Object.values(tabla).map((r) => ({ ...r, js: r.js.sort((x, y) => x.j - y.j) }))
+      .sort((a, b) => b.pj - a.pj || b.V - a.V || a.D - b.D || a.js[0].j - b.js[0].j);
+    document.getElementById('t-arbitros').textContent = '🟨 Árbitros de ' + nombre;
+    document.getElementById('nota-arbitros').textContent =
+      `Árbitros que han dirigido partidos de ${nombre}, según las actas: jornadas que pitaron y victorias, empates y derrotas de ${nombre} con cada uno.`;
+    document.querySelector('#tabla-arbitros thead').innerHTML =
+      '<tr><th class="izq">Árbitro</th><th class="izq">Jornadas</th><th>PJ</th><th>V</th><th>E</th><th>D</th></tr>';
+    const c = (n, cls) => `<td>${n ? `<span class="arb-n ${cls}">${n}</span>` : '<span class="arb-0">0</span>'}</td>`;
+    document.querySelector('#tabla-arbitros tbody').innerHTML = filas.map((r) => {
+      const jornadas = r.js.map((x) => `<span class="jchip ${x.res}" title="${esc(x.txt)}">J${x.j}</span>`).join('');
+      return `<tr><td class="izq">${esc(nombreBonito(r.nom))}</td><td class="izq"><span class="jchips">${jornadas}</span></td><td><b>${r.pj}</b></td>${c(r.V, 'V')}${c(r.E, 'E')}${c(r.D, 'D')}</tr>`;
+    }).join('') || '<tr><td class="izq" colspan="6">Este equipo aún no tiene actas con árbitro.</td></tr>';
+  }
+
+  document.querySelectorAll('[data-filtro-gol]').forEach((b) => b.addEventListener('click', () => {
+    filtroGoles = b.dataset.filtroGol;
+    document.querySelectorAll('[data-filtro-gol]').forEach((o) => o.setAttribute('aria-pressed', String(o === b)));
+    pintarJugadores();
+  }));
+
+  async function cargarEstadisticas(equipoActivo) {
+    const tGoles = document.getElementById('lista-goleadores');
+    const tPart = document.getElementById('lista-participacion');
+    try {
+      const actas = await leerActas();
+      const goles = {}, partidos = {};
+      Object.values(actas).forEach((acta) => {
+        Object.entries(acta.equipos || {}).forEach(([equipo, pl]) => {
+          [...(pl.titulares || []), ...(pl.suplentes || [])].forEach((j) => sumar(partidos, equipo, j.nombre));
+        });
+        (acta.goles || []).forEach((g) => {
+          if (g.tipo === 'propia' || !g.jugador) return; // el gol en propia no suma al jugador
+          // equipo del jugador: el que tiene en la alineación (por si 'equipo' viniera vacío)
+          const eq = Object.entries(acta.equipos || {}).find(([, pl]) =>
+            [...(pl.titulares || []), ...(pl.suplentes || [])].some((j) => j.nombre === g.jugador));
+          sumar(goles, eq ? eq[0] : (g.equipo || ''), g.jugador);
+        });
+      });
+      ultimasCuentas = { goles, partidos, equipoActivo };
+      actasArb = actas; equipoArb = equipoActivo; pintarArbitros();
+      pintarJugadores();
+    } catch (e) {
+      console.error('Error al cargar actas.json:', e);
+      tGoles.innerHTML = tPart.innerHTML = '<tr><td class="izq" colspan="2">No se pudieron cargar las actas.</td></tr>';
+    }
+  }
+
+  // Controles
+  const sel = document.getElementById('equipo');
+  sel.innerHTML = equipos.map((e) => `<option value="${esc(e)}">${esc(NOMBRES[e] || e)}</option>`).join('');
+  const inicial = equipos.includes(decodeURIComponent(location.hash.slice(1))) ? decodeURIComponent(location.hash.slice(1)) : EQUIPO_POR_DEFECTO;
+  sel.value = inicial;
+  sel.addEventListener('change', () => { pintar(sel.value); pintarJornada(sel.value); cargarEstadisticas(sel.value); history.replaceState(null, '', sel.value === EQUIPO_POR_DEFECTO ? location.pathname : '#' + encodeURIComponent(sel.value)); });
+
+  const btn = document.getElementById('btn-prob');
+  btn.addEventListener('click', () => {
+    const on = btn.getAttribute('aria-pressed') !== 'true';
+    btn.setAttribute('aria-pressed', String(on));
+    btn.textContent = on ? 'Ocultar probabilidades' : 'Ver probabilidades';
+    document.getElementById('tabla-partidos').classList.toggle('con-prob', on);
+  });
+
+  document.querySelectorAll('[data-vista]').forEach((b) => b.addEventListener('click', () => {
+    const v = b.dataset.vista;
+    document.querySelectorAll('[data-vista]').forEach((o) => o.setAttribute('aria-pressed', String(o.dataset.vista === v)));
+    document.querySelectorAll('[data-ver]').forEach((e) => { e.hidden = e.dataset.ver !== v; });
+  }));
+
+  pintar(inicial);
+  leerCalendario().then(() => pintarJornada(sel.value));
+  cargarEstadisticas(inicial);
+})();
+</script>
+</body>
+</html>
