@@ -3,252 +3,321 @@
     "San Martín|Textil Escudo": {
       "fecha": "2026-10-10",
       "hora": "11:00",
-      "acta": "254635"
+      "acta": "254635",
+      "estado": "final"
     },
     "Polanco|Velarde": {
       "fecha": "2026-10-10",
       "hora": "11:30",
-      "acta": "254634"
+      "acta": "254634",
+      "estado": "final"
     },
     "Marina Sport|At. Cueto": {
       "fecha": "2026-10-11",
       "hora": "10:00",
-      "acta": "254639"
+      "acta": "254639",
+      "estado": "final"
     },
     "Vimenor|Ayron": {
       "fecha": "2026-10-11",
       "hora": "11:00",
-      "acta": "254636"
+      "acta": "254636",
+      "estado": "final"
     },
     "Tropezón|Rayo Santa Cruz": {
       "fecha": "2026-10-11",
       "hora": "11:00",
-      "acta": "254638"
+      "acta": "254638",
+      "estado": "final"
     },
     "San Felices|Amistad Sniace": {
       "fecha": "2026-10-11",
       "hora": "11:15",
-      "acta": "254633"
+      "acta": "254633",
+      "estado": "final"
     },
     "Cayón|Arenas de Iguña": {
       "fecha": "2026-10-11",
       "hora": "12:00",
-      "acta": "255192"
+      "acta": "255192",
+      "estado": "final"
     }
   },
   "2": {
     "Velarde|San Felices": {
       "fecha": "2026-10-17",
       "hora": "10:00",
-      "acta": "254641"
+      "acta": "254641",
+      "estado": "final"
     },
     "At. Cueto|Tropezón": {
       "fecha": "2026-10-17",
       "hora": "11:00",
-      "acta": "254646"
+      "acta": "254646",
+      "estado": "final"
     },
     "Textil Escudo|Polanco": {
       "fecha": "2026-10-17",
       "hora": "11:30",
-      "acta": "254642"
+      "acta": "254642",
+      "estado": "final"
     },
     "Arenas de Iguña|Vimenor": {
       "fecha": "2026-10-17",
       "hora": "11:30",
-      "acta": "255179"
+      "acta": "255179",
+      "estado": "final"
     },
     "Rayo Santa Cruz|Cayón": {
       "fecha": "2026-10-17",
       "hora": "12:00",
-      "acta": "254645"
+      "acta": "254645",
+      "estado": ""
     },
     "Amistad Sniace|Marina Sport": {
       "fecha": "2026-10-18",
       "hora": "11:00",
-      "acta": "254640"
+      "acta": "254640",
+      "estado": ""
     },
     "Ayron|San Martín": {
       "fecha": "2026-10-18",
       "hora": "11:00",
-      "acta": "254643"
+      "acta": "254643",
+      "estado": ""
     }
   },
   "3": {
     "Polanco|Ayron": {
       "fecha": "2026-10-24",
       "hora": "10:30",
-      "acta": "254649"
+      "acta": "254649",
+      "estado": ""
     },
     "San Martín|Arenas de Iguña": {
       "fecha": "2026-10-24",
       "hora": "11:00",
-      "acta": "255193"
+      "acta": "255193",
+      "estado": ""
     },
     "Amistad Sniace|Velarde": {
       "fecha": "2026-10-24",
       "hora": "17:00",
-      "acta": "254647"
+      "acta": "254647",
+      "estado": ""
     },
     "Marina Sport|Tropezón": {
       "fecha": "2026-10-25",
       "hora": "10:00",
-      "acta": "254653"
+      "acta": "254653",
+      "estado": ""
     },
     "Cayón|At. Cueto": {
       "fecha": "2026-10-25",
       "hora": "10:15",
-      "acta": "254652"
+      "acta": "254652",
+      "estado": ""
     },
     "San Felices|Textil Escudo": {
       "fecha": "2026-10-25",
       "hora": "10:30",
-      "acta": "254648"
+      "acta": "254648",
+      "estado": ""
     },
     "Vimenor|Rayo Santa Cruz": {
       "fecha": "2026-10-25",
       "hora": "12:15",
-      "acta": "254651"
+      "acta": "254651",
+      "estado": ""
     }
   },
   "4": {
     "Arenas de Iguña|Polanco": {
       "fecha": "2026-10-30",
       "hora": "19:00",
-      "acta": "255180"
+      "acta": "255180",
+      "estado": ""
     },
     "Velarde|Marina Sport": {
       "fecha": "2026-10-31",
       "hora": "10:00",
-      "acta": "254654"
+      "acta": "254654",
+      "estado": ""
     },
     "Textil Escudo|Amistad Sniace": {
       "fecha": "2026-10-31",
       "hora": "10:00",
-      "acta": "254655"
+      "acta": "254655",
+      "estado": ""
     },
     "Rayo Santa Cruz|San Martín": {
       "fecha": "2026-10-31",
       "hora": "11:00",
-      "acta": "254658"
+      "acta": "254658",
+      "estado": ""
     },
     "At. Cueto|Vimenor": {
       "fecha": "2026-10-31",
       "hora": "11:00",
-      "acta": "254659"
+      "acta": "254659",
+      "estado": ""
     },
     "Tropezón|Cayón": {
       "fecha": "2026-11-01",
       "hora": "10:00",
-      "acta": "254660"
+      "acta": "254660",
+      "estado": ""
     },
     "Ayron|San Felices": {
       "fecha": "2026-11-01",
       "hora": "12:00",
-      "acta": "254656"
+      "acta": "254656",
+      "estado": ""
     }
   },
   "5": {
     "San Martín|At. Cueto": {
       "fecha": "2026-11-06",
       "hora": "18:00",
-      "acta": "254665"
+      "acta": "254665",
+      "estado": ""
     },
     "Velarde|Textil Escudo": {
       "fecha": "2026-11-07",
       "hora": "10:00",
-      "acta": "254661"
+      "acta": "254661",
+      "estado": ""
     },
     "Polanco|Rayo Santa Cruz": {
       "fecha": "2026-11-07",
       "hora": "10:00",
-      "acta": "254664"
+      "acta": "254664",
+      "estado": ""
     },
     "Marina Sport|Cayón": {
       "fecha": "2026-11-07",
       "hora": "10:30",
-      "acta": "254667"
+      "acta": "254667",
+      "estado": ""
     },
     "San Felices|Arenas de Iguña": {
       "fecha": "2026-11-07",
       "hora": "16:30",
-      "acta": "255194"
+      "acta": "255194",
+      "estado": ""
     },
     "Amistad Sniace|Ayron": {
       "fecha": "2026-11-08",
       "hora": "10:00",
-      "acta": "254662"
+      "acta": "254662",
+      "estado": ""
     },
     "Vimenor|Tropezón": {
       "fecha": "2026-11-08",
       "hora": "11:00",
-      "acta": "254666"
+      "acta": "254666",
+      "estado": ""
     }
   },
   "6": {
     "Cayón|Vimenor": {
       "fecha": "2026-11-14",
       "hora": "11:15",
-      "acta": "254674"
+      "acta": "254674",
+      "campo": "Pab. de Sta Mª.Cayón",
+      "arbitro": "NAVAMUEL FERNÁNDEZ, LUIS",
+      "estado": ""
     },
     "Arenas de Iguña|Amistad Sniace": {
       "fecha": "2026-11-14",
       "hora": "11:30",
-      "acta": "255181"
+      "acta": "255181",
+      "campo": "Pab. de La Serna Iguña.",
+      "arbitro": "GONZALEZ FERNANDEZ, RAQUEL",
+      "estado": ""
     },
     "At. Cueto|Polanco": {
       "fecha": "2026-11-14",
       "hora": "12:00",
-      "acta": "254672"
+      "acta": "254672",
+      "campo": "Pab. de Cueto Uco Lastra",
+      "arbitro": "GONZALEZ GARCIA, PABLO",
+      "estado": ""
     },
     "Ayron|Velarde": {
       "fecha": "2026-11-15",
       "hora": "10:00",
-      "acta": "254669"
+      "acta": "254669",
+      "campo": "Pab. de Vargas",
+      "arbitro": "VILLATE CUADRADO, JOSE FRANCISCO",
+      "estado": ""
     },
     "Tropezón|San Martín": {
       "fecha": "2026-11-15",
       "hora": "10:00",
-      "acta": "254673"
+      "acta": "254673",
+      "campo": "Pab. E.P.Pachín",
+      "arbitro": "SAN JOSE DIEZ, JAVIER",
+      "estado": ""
     },
     "Textil Escudo|Marina Sport": {
       "fecha": "2026-11-15",
       "hora": "11:00",
-      "acta": "254668"
+      "acta": "254668",
+      "campo": "Pab. M. de la Torre / Cabezón",
+      "arbitro": "PEREZ MUELA, DIEGO",
+      "estado": ""
     },
     "Rayo Santa Cruz|San Felices": {
       "fecha": "2026-11-15",
       "hora": "13:00",
-      "acta": "254671"
+      "acta": "254671",
+      "campo": "Pab. de Bezana",
+      "arbitro": "GIL CANO, LUIS GUILLERMO",
+      "estado": ""
     }
   },
   "7": {
     "Velarde|Arenas de Iguña": {
       "fecha": "2026-11-21",
-      "hora": "10:00"
+      "hora": "10:00",
+      "campo": "Pab. Luis Urrutia Muriedas",
+      "estado": ""
     },
     "Polanco|Tropezón": {
       "fecha": "2026-11-21",
-      "hora": "10:00"
+      "hora": "10:00",
+      "campo": "Pab. de Polanco",
+      "estado": ""
     },
     "San Martín|Cayón": {
       "fecha": "2026-11-21",
-      "hora": "11:00"
+      "hora": "11:00",
+      "campo": "Pab. de Suances",
+      "estado": ""
     },
     "San Felices|At. Cueto": {
       "fecha": "2026-11-22",
-      "aprox": true
+      "campo": "Pab. de San Felices Buelna",
+      "estado": ""
     },
     "Marina Sport|Vimenor": {
       "fecha": "2026-11-22",
-      "hora": "10:00"
+      "hora": "10:00",
+      "campo": "Pab. de Soto La Marina",
+      "estado": ""
     },
     "Textil Escudo|Ayron": {
       "fecha": "2026-11-22",
-      "hora": "11:00"
+      "hora": "11:00",
+      "campo": "Pab. Juan M. Pares / Cabezón",
+      "estado": ""
     },
     "Amistad Sniace|Rayo Santa Cruz": {
       "fecha": "2026-11-22",
-      "hora": "13:00"
+      "hora": "13:00",
+      "campo": "Pab. E.P.Pachín",
+      "estado": ""
     }
   },
   "8": {
