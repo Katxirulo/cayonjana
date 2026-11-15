@@ -210,13 +210,13 @@
       "fecha": "2026-11-08",
       "hora": "10:00",
       "acta": "254662",
-      "estado": ""
+      "estado": "final"
     },
     "Vimenor|Tropezón": {
       "fecha": "2026-11-08",
       "hora": "11:00",
       "acta": "254666",
-      "estado": ""
+      "estado": "final"
     }
   },
   "6": {
@@ -224,43 +224,43 @@
       "fecha": "2026-11-14",
       "hora": "11:15",
       "acta": "254674",
-      "estado": ""
+      "estado": "final"
     },
     "Arenas de Iguña|Amistad Sniace": {
       "fecha": "2026-11-14",
       "hora": "11:30",
       "acta": "255181",
-      "estado": ""
+      "estado": "final"
     },
     "At. Cueto|Polanco": {
       "fecha": "2026-11-14",
       "hora": "12:00",
       "acta": "254672",
-      "estado": ""
+      "estado": "final"
     },
     "Ayron|Velarde": {
       "fecha": "2026-11-15",
       "hora": "10:00",
       "acta": "254669",
-      "estado": ""
+      "estado": "final"
     },
     "Tropezón|San Martín": {
       "fecha": "2026-11-15",
       "hora": "10:00",
       "acta": "254673",
-      "estado": ""
+      "estado": "final"
     },
     "Textil Escudo|Marina Sport": {
       "fecha": "2026-11-15",
       "hora": "11:00",
       "acta": "254668",
-      "estado": ""
+      "estado": "final"
     },
     "Rayo Santa Cruz|San Felices": {
       "fecha": "2026-11-15",
       "hora": "13:00",
       "acta": "254671",
-      "estado": ""
+      "estado": "final"
     }
   },
   "7": {
