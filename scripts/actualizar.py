@@ -574,18 +574,16 @@ def revisar_jornadas(filas, cal, actas):
             cod = d.get("acta")
             # El acta se descarga si el partido ya debería haber terminado y no la tenemos completa,
             # o si es reciente (la federación a veces corrige el acta en las horas siguientes).
+            en_espera = False
             if cod and terminado and (not acta_completa(actas.get(cod)) or reciente) and (descargadas >= MAX_ACTAS or cortado):
-                if cortado:
-                    pass
-                else:
-                    print(f"  Acta {cod}: se deja para la próxima ejecución (máximo {MAX_ACTAS} por ejecución).")
+                en_espera = True
             elif cod and terminado and (not acta_completa(actas.get(cod)) or reciente):
                 descargadas += 1
                 try:
                     a = extraer_acta_partido(cod)
                 except Bloqueado:
                     a = None
-                    cortado = True
+                    cortado = en_espera = True
                     print(f"  Acta {cod}: la federación no responde; el resto de actas se intentarán en la próxima ejecución.")
                 if a and acta_completa(a) and {a["local"], a["visitante"]} == {l, v}:
                     if actas.get(cod) != a:
@@ -607,6 +605,8 @@ def revisar_jornadas(filas, cal, actas):
                     if marcador_web and marcador_web != marcador:
                         print(f"  (aviso) J{j} {l} - {v}: la web parece mostrar {marcador_web[0]}-{marcador_web[1]}, "
                               f"pero el acta suma {marcador[0]}-{marcador[1]}; se usa el acta.")
+            elif en_espera and f[3] == "":
+                print(f"  J{j} {l} - {v}: acta pendiente de descargar; se intentará en la próxima vuelta.")
             elif terminado and f[3] == "":
                 print(f"  J{j} {l} - {v}: terminado pero sin acta cerrada todavía; se queda sin resultado.")
             if marcador:
