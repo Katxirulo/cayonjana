@@ -3070,5 +3070,1417 @@
       }
     ],
     "marcador": null
+  },
+  "254654": {
+    "version": 2,
+    "jornada": 4,
+    "local": "Velarde",
+    "visitante": "Marina Sport",
+    "arbitro": "SANTIN DEL CASTILLO, RAÚL",
+    "equipos": {
+      "Velarde": {
+        "titulares": [
+          {
+            "dorsal": "13",
+            "nombre": "TEJA GANDARILLAS, GONZALO"
+          },
+          {
+            "dorsal": "2",
+            "nombre": "HUIDOBRO POZUETA, SANTIAGO"
+          },
+          {
+            "dorsal": "4",
+            "nombre": "BEGEGA DIEZ, MATIAS"
+          },
+          {
+            "dorsal": "8",
+            "nombre": "MONTÓN MORENO, DIEGO"
+          },
+          {
+            "dorsal": "10",
+            "nombre": "MACIAS CADELO, DARIO"
+          },
+          {
+            "dorsal": "11",
+            "nombre": "HEDILLA GONZALEZ, LUCAS"
+          }
+        ],
+        "suplentes": [
+          {
+            "dorsal": "5",
+            "nombre": "LOPEZ ALVAREZ, HUGO"
+          },
+          {
+            "dorsal": "6",
+            "nombre": "VAZQUEZ FERNANDEZ, CARLOS"
+          },
+          {
+            "dorsal": "7",
+            "nombre": "GARAY GARCIA, ERIK"
+          },
+          {
+            "dorsal": "9",
+            "nombre": "PITUSCAN, IVAN"
+          },
+          {
+            "dorsal": "12",
+            "nombre": "MARTINEZ VRANCEANU, MATEO"
+          },
+          {
+            "dorsal": "14",
+            "nombre": "CASTANEDO SAINZ, ALEJANDRO"
+          }
+        ]
+      },
+      "Marina Sport": {
+        "titulares": [
+          {
+            "dorsal": "1",
+            "nombre": "GUTIERREZ DEL PINO, DARIO"
+          },
+          {
+            "dorsal": "5",
+            "nombre": "ALDEA MARTINEZ, MARCO"
+          },
+          {
+            "dorsal": "7",
+            "nombre": "BARRIOS JIMENEZ, ALFREDO"
+          },
+          {
+            "dorsal": "8",
+            "nombre": "MARTIN GONZALEZ, LUCA"
+          },
+          {
+            "dorsal": "10",
+            "nombre": "MAZO GALLAT, NICOLAS"
+          },
+          {
+            "dorsal": "12",
+            "nombre": "SERRATO MANEA, LUKA"
+          }
+        ],
+        "suplentes": [
+          {
+            "dorsal": "4",
+            "nombre": "SAINZ SAINZ, BRUNO"
+          }
+        ]
+      }
+    },
+    "goles": [
+      {
+        "minuto": 3,
+        "jugador": "MACIAS CADELO, DARIO",
+        "equipo": "Velarde",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 15,
+        "jugador": "LOPEZ ALVAREZ, HUGO",
+        "equipo": "Velarde",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 17,
+        "jugador": "MARTINEZ VRANCEANU, MATEO",
+        "equipo": "Velarde",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 22,
+        "jugador": "MACIAS CADELO, DARIO",
+        "equipo": "Velarde",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 25,
+        "jugador": "MONTÓN MORENO, DIEGO",
+        "equipo": "Velarde",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 34,
+        "jugador": "CASTANEDO SAINZ, ALEJANDRO",
+        "equipo": "Velarde",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 37,
+        "jugador": "HEDILLA GONZALEZ, LUCAS",
+        "equipo": "Velarde",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 39,
+        "jugador": "BEGEGA DIEZ, MATIAS",
+        "equipo": "Velarde",
+        "tipo": "normal"
+      }
+    ],
+    "marcador": null
+  },
+  "254655": {
+    "version": 2,
+    "jornada": 4,
+    "local": "Textil Escudo",
+    "visitante": "Amistad Sniace",
+    "arbitro": "FALAGÁN DÍAZ , HÉCTOR",
+    "equipos": {
+      "Textil Escudo": {
+        "titulares": [
+          {
+            "dorsal": "1",
+            "nombre": "MACHADO ALEGRIA, DARIO"
+          },
+          {
+            "dorsal": "3",
+            "nombre": "RODRIGUEZ FERNANDEZ, SERGIO"
+          },
+          {
+            "dorsal": "8",
+            "nombre": "GONZALEZ GONZALEZ, ALEJO"
+          },
+          {
+            "dorsal": "10",
+            "nombre": "MANTILLA FERNANDEZ, ALONSO"
+          },
+          {
+            "dorsal": "11",
+            "nombre": "GOMEZ GOMEZ, LUCAS"
+          },
+          {
+            "dorsal": "14",
+            "nombre": "GUTIERREZ SANCHEZ, LUCAS"
+          }
+        ],
+        "suplentes": [
+          {
+            "dorsal": "6",
+            "nombre": "GONZALEZ MIER, IAN"
+          },
+          {
+            "dorsal": "7",
+            "nombre": "GONZALEZ GUTIERREZ, JOSE MANUEL"
+          },
+          {
+            "dorsal": "9",
+            "nombre": "ALEGRE MARTINEZ, HELENA"
+          }
+        ]
+      },
+      "Amistad Sniace": {
+        "titulares": [
+          {
+            "dorsal": "13",
+            "nombre": "OBESO GONZALEZ, OLIVER"
+          },
+          {
+            "dorsal": "3",
+            "nombre": "LOPEZ PEÑA, MARC"
+          },
+          {
+            "dorsal": "4",
+            "nombre": "VELASCO TORRONTEGUI, MARIO"
+          },
+          {
+            "dorsal": "7",
+            "nombre": "PEDRAJO MORANTE, MARIO"
+          },
+          {
+            "dorsal": "10",
+            "nombre": "GONZÁLEZ CONDE, LOLA"
+          },
+          {
+            "dorsal": "11",
+            "nombre": "MARTINEZ FERNANDEZ, BELTRAN"
+          }
+        ],
+        "suplentes": [
+          {
+            "dorsal": "5",
+            "nombre": "FERNANDEZ ORTEGA, JAVIER"
+          },
+          {
+            "dorsal": "15",
+            "nombre": "VENTISCA HERRERA, DAVINIA"
+          }
+        ]
+      }
+    },
+    "goles": [
+      {
+        "minuto": 1,
+        "jugador": "RODRIGUEZ FERNANDEZ, SERGIO",
+        "equipo": "Textil Escudo",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 5,
+        "jugador": "MANTILLA FERNANDEZ, ALONSO",
+        "equipo": "Textil Escudo",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 7,
+        "jugador": "GONZALEZ GONZALEZ, ALEJO",
+        "equipo": "Textil Escudo",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 8,
+        "jugador": "GONZALEZ GONZALEZ, ALEJO",
+        "equipo": "Textil Escudo",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 9,
+        "jugador": "RODRIGUEZ FERNANDEZ, SERGIO",
+        "equipo": "Textil Escudo",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 14,
+        "jugador": "ALEGRE MARTINEZ, HELENA",
+        "equipo": "Textil Escudo",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 16,
+        "jugador": "GONZALEZ MIER, IAN",
+        "equipo": "Textil Escudo",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 18,
+        "jugador": "GONZALEZ MIER, IAN",
+        "equipo": "Textil Escudo",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 22,
+        "jugador": "MANTILLA FERNANDEZ, ALONSO",
+        "equipo": "Textil Escudo",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 24,
+        "jugador": "GUTIERREZ SANCHEZ, LUCAS",
+        "equipo": "Textil Escudo",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 30,
+        "jugador": "GOMEZ GOMEZ, LUCAS",
+        "equipo": "Textil Escudo",
+        "tipo": "normal"
+      }
+    ],
+    "marcador": null
+  },
+  "254658": {
+    "version": 2,
+    "jornada": 4,
+    "local": "Rayo Santa Cruz",
+    "visitante": "San Martín",
+    "arbitro": "GONZALEZ GARCIA, PABLO",
+    "equipos": {
+      "Rayo Santa Cruz": {
+        "titulares": [
+          {
+            "dorsal": "1",
+            "nombre": "BOUZGARROU CASTANEDO, YUREM"
+          },
+          {
+            "dorsal": "3",
+            "nombre": "SERRANO PEÑA, DAVID"
+          },
+          {
+            "dorsal": "6",
+            "nombre": "GUTIERREZ MARTINEZ, CRISTIAN"
+          },
+          {
+            "dorsal": "8",
+            "nombre": "FERNANDEZ CRUZ, MATEO"
+          },
+          {
+            "dorsal": "9",
+            "nombre": "MONJE MARTINEZ, PABLO"
+          },
+          {
+            "dorsal": "10",
+            "nombre": "MERAYO FERNANDEZ, LUCA"
+          }
+        ],
+        "suplentes": [
+          {
+            "dorsal": "20",
+            "nombre": "BOUZGARROU CASTANEDO, HEDI"
+          }
+        ]
+      },
+      "San Martín": {
+        "titulares": [
+          {
+            "dorsal": "1",
+            "nombre": "PORTILLA PUENTE, JAVIER"
+          },
+          {
+            "dorsal": "2",
+            "nombre": "CABO DE LA CAL, GONZALO"
+          },
+          {
+            "dorsal": "3",
+            "nombre": "GONZALEZ FERNANDEZ, ALEX"
+          },
+          {
+            "dorsal": "4",
+            "nombre": "ZABALETA DE LA FUENTE, GONZALO"
+          },
+          {
+            "dorsal": "10",
+            "nombre": "FRAILE GARCIA, MATIAS"
+          },
+          {
+            "dorsal": "28",
+            "nombre": "OPORTO DE CABO, MATEO"
+          }
+        ],
+        "suplentes": [
+          {
+            "dorsal": "7",
+            "nombre": "SALARICHS MAZÓN, PABLO"
+          },
+          {
+            "dorsal": "16",
+            "nombre": "ARGUMOSA BADA, NICOLAS"
+          }
+        ]
+      }
+    },
+    "goles": [
+      {
+        "minuto": 1,
+        "jugador": "BOUZGARROU CASTANEDO, HEDI",
+        "equipo": "Rayo Santa Cruz",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 11,
+        "jugador": "BOUZGARROU CASTANEDO, HEDI",
+        "equipo": "Rayo Santa Cruz",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 18,
+        "jugador": "FRAILE GARCIA, MATIAS",
+        "equipo": "San Martín",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 30,
+        "jugador": "OPORTO DE CABO, MATEO",
+        "equipo": "San Martín",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 33,
+        "jugador": "FRAILE GARCIA, MATIAS",
+        "equipo": "San Martín",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 36,
+        "jugador": "FERNANDEZ CRUZ, MATEO",
+        "equipo": "Rayo Santa Cruz",
+        "tipo": "normal"
+      }
+    ],
+    "marcador": null
+  },
+  "254659": {
+    "version": 2,
+    "jornada": 4,
+    "local": "At. Cueto",
+    "visitante": "Vimenor",
+    "arbitro": "ARAQUE MARTINEZ, ANTHONY JOSÉ",
+    "equipos": {
+      "At. Cueto": {
+        "titulares": [
+          {
+            "dorsal": "1",
+            "nombre": "RODRÍGUEZ DE LA FLOR SÁNCHEZ, LUCA"
+          },
+          {
+            "dorsal": "2",
+            "nombre": "HELGUERA DIEGO, MARCO"
+          },
+          {
+            "dorsal": "3",
+            "nombre": "SEDANO SALAZAR, NICOLÁS"
+          },
+          {
+            "dorsal": "5",
+            "nombre": "LOPEZ HERRERA, NEIZAN"
+          },
+          {
+            "dorsal": "7",
+            "nombre": "MARTÍN INGUANZO, PABLO"
+          },
+          {
+            "dorsal": "8",
+            "nombre": "NAVEDO GONZÁLEZ, BOSCO"
+          }
+        ],
+        "suplentes": [
+          {
+            "dorsal": "6",
+            "nombre": "NÚÑEZ TORRE, MARTÍN"
+          },
+          {
+            "dorsal": "9",
+            "nombre": "TRUJEDA CARRAL, MILAN"
+          },
+          {
+            "dorsal": "12",
+            "nombre": "SIERRA GARCÍA, NICOLÁS"
+          }
+        ]
+      },
+      "Vimenor": {
+        "titulares": [
+          {
+            "dorsal": "13",
+            "nombre": "CELESTINO DUARTE, LUIS"
+          },
+          {
+            "dorsal": "2",
+            "nombre": "GONZALEZ SETIEN, MARCO"
+          },
+          {
+            "dorsal": "3",
+            "nombre": "COLSA PILA, MARIO"
+          },
+          {
+            "dorsal": "5",
+            "nombre": "TORAYA ORTIZ, ÁLVARO"
+          },
+          {
+            "dorsal": "6",
+            "nombre": "DAMALIA SOBRAO, OLIVIER"
+          },
+          {
+            "dorsal": "7",
+            "nombre": "GUEMES ONTAÑON, ÁLVARO"
+          }
+        ],
+        "suplentes": [
+          {
+            "dorsal": "4",
+            "nombre": "RUIZ-ZORRILLA FOLLANA, YAGO"
+          },
+          {
+            "dorsal": "8",
+            "nombre": "LÓPEZ BARCENA, ÁNGEL"
+          }
+        ]
+      }
+    },
+    "goles": [
+      {
+        "minuto": 7,
+        "jugador": "NAVEDO GONZÁLEZ, BOSCO",
+        "equipo": "At. Cueto",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 11,
+        "jugador": "MARTÍN INGUANZO, PABLO",
+        "equipo": "At. Cueto",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 23,
+        "jugador": "TORAYA ORTIZ, ÁLVARO",
+        "equipo": "Vimenor",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 27,
+        "jugador": "TORAYA ORTIZ, ÁLVARO",
+        "equipo": "Vimenor",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 30,
+        "jugador": "NAVEDO GONZÁLEZ, BOSCO",
+        "equipo": "At. Cueto",
+        "tipo": "normal"
+      }
+    ],
+    "marcador": null
+  },
+  "254660": {
+    "version": 2,
+    "jornada": 4,
+    "local": "Tropezón",
+    "visitante": "Cayón",
+    "arbitro": "MORANTE PARADA, BELEN",
+    "equipos": {
+      "Tropezón": {
+        "titulares": [
+          {
+            "dorsal": "13",
+            "nombre": "PEREZ PARRO, GABRIEL"
+          },
+          {
+            "dorsal": "3",
+            "nombre": "ARZA TABORDA, RAMSES"
+          },
+          {
+            "dorsal": "4",
+            "nombre": "GUTIERREZ GARCIA, DANIEL"
+          },
+          {
+            "dorsal": "7",
+            "nombre": "FERNANDEZ MOREL, MIGUEL DAVID"
+          },
+          {
+            "dorsal": "9",
+            "nombre": "POSTOLACHE MARTINEZ, CRISTIAN IONEL"
+          },
+          {
+            "dorsal": "11",
+            "nombre": "TARRERO MANZANEDO, IVAN"
+          }
+        ],
+        "suplentes": [
+          {
+            "dorsal": "5",
+            "nombre": "GONZALEZ RODRIGUEZ, ROQUE"
+          },
+          {
+            "dorsal": "12",
+            "nombre": "MASA LEMA, MARCOS"
+          }
+        ]
+      },
+      "Cayón": {
+        "titulares": [
+          {
+            "dorsal": "2",
+            "nombre": "RUIZ COBO, LUCIA"
+          },
+          {
+            "dorsal": "7",
+            "nombre": "MARTINEZ PELAYO, CESAR"
+          },
+          {
+            "dorsal": "8",
+            "nombre": "LOPEZ MANTECON, KYLIAN"
+          },
+          {
+            "dorsal": "10",
+            "nombre": "GÓMEZ DE LA GALA, DAREM"
+          },
+          {
+            "dorsal": "14",
+            "nombre": "GRISHEV JUNCO, PERLA"
+          },
+          {
+            "dorsal": "27",
+            "nombre": "COLSA DE LA PINTA, GAEL"
+          }
+        ],
+        "suplentes": [
+          {
+            "dorsal": "4",
+            "nombre": "MENDIGUCHIA MANTECA, DEVA"
+          },
+          {
+            "dorsal": "24",
+            "nombre": "MANTECA BECERRIL, MARIO"
+          },
+          {
+            "dorsal": "35",
+            "nombre": "SAINZ SAINZ, JANA"
+          }
+        ]
+      }
+    },
+    "goles": [
+      {
+        "minuto": 7,
+        "jugador": "COLSA DE LA PINTA, GAEL",
+        "equipo": "Cayón",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 9,
+        "jugador": "LOPEZ MANTECON, KYLIAN",
+        "equipo": "Cayón",
+        "tipo": "normal"
+      }
+    ],
+    "marcador": null
+  },
+  "254656": {
+    "version": 2,
+    "jornada": 4,
+    "local": "Ayron",
+    "visitante": "San Felices",
+    "arbitro": "CUESTA GARCIA, MIGUEL",
+    "equipos": {
+      "Ayron": {
+        "titulares": [
+          {
+            "dorsal": "1",
+            "nombre": "ESPESO ORTIZ, OLIVER"
+          },
+          {
+            "dorsal": "2",
+            "nombre": "VILLA PIÑERO, LUIS"
+          },
+          {
+            "dorsal": "5",
+            "nombre": "GARCIA RODRIGUEZ, LUCAS"
+          },
+          {
+            "dorsal": "6",
+            "nombre": "LAMADRID BENITO, BRUNO"
+          },
+          {
+            "dorsal": "7",
+            "nombre": "GANCEDO PÉREZ, ARES"
+          },
+          {
+            "dorsal": "10",
+            "nombre": "BEREGUIAIN GARCIA, LUCAS"
+          }
+        ],
+        "suplentes": [
+          {
+            "dorsal": "4",
+            "nombre": "CAMPO HERRERA, EDUARDO"
+          },
+          {
+            "dorsal": "8",
+            "nombre": "PEREZ COBO, MARCOS"
+          },
+          {
+            "dorsal": "9",
+            "nombre": "ALBO RUIZ, MANUEL"
+          }
+        ]
+      },
+      "San Felices": {
+        "titulares": [
+          {
+            "dorsal": "1",
+            "nombre": "GUTIERREZ FERNANDEZ, MARTIN"
+          },
+          {
+            "dorsal": "2",
+            "nombre": "CASCUDO CEBALLOS, MATIAS"
+          },
+          {
+            "dorsal": "5",
+            "nombre": "MUÑOZ PORTILLA, ELOY"
+          },
+          {
+            "dorsal": "6",
+            "nombre": "RUIZ CEBALLOS, NOEL"
+          },
+          {
+            "dorsal": "8",
+            "nombre": "MONTES CRUZ, BRUNO"
+          },
+          {
+            "dorsal": "10",
+            "nombre": "PEREDO DIAZ, HUGO"
+          }
+        ],
+        "suplentes": [
+          {
+            "dorsal": "3",
+            "nombre": "OUATTARA PORTILLA, OMAR"
+          },
+          {
+            "dorsal": "7",
+            "nombre": "HENALES RUIZ, UBAY"
+          },
+          {
+            "dorsal": "12",
+            "nombre": "OBREGÓN MENDIGUCHIA, MARCO"
+          },
+          {
+            "dorsal": "14",
+            "nombre": "MAGALDI PORRAS, KEVIN"
+          }
+        ]
+      }
+    },
+    "goles": [
+      {
+        "minuto": 12,
+        "jugador": "RUIZ CEBALLOS, NOEL",
+        "equipo": "San Felices",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 18,
+        "jugador": "CASCUDO CEBALLOS, MATIAS",
+        "equipo": "San Felices",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 23,
+        "jugador": "CASCUDO CEBALLOS, MATIAS",
+        "equipo": "San Felices",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 25,
+        "jugador": "OUATTARA PORTILLA, OMAR",
+        "equipo": "San Felices",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 28,
+        "jugador": "PEREDO DIAZ, HUGO",
+        "equipo": "San Felices",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 28,
+        "jugador": "RUIZ CEBALLOS, NOEL",
+        "equipo": "San Felices",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 30,
+        "jugador": "RUIZ CEBALLOS, NOEL",
+        "equipo": "San Felices",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 31,
+        "jugador": "OUATTARA PORTILLA, OMAR",
+        "equipo": "San Felices",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 32,
+        "jugador": "CASCUDO CEBALLOS, MATIAS",
+        "equipo": "San Felices",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 35,
+        "jugador": "CASCUDO CEBALLOS, MATIAS",
+        "equipo": "San Felices",
+        "tipo": "normal"
+      }
+    ],
+    "marcador": null
+  },
+  "254665": {
+    "version": 2,
+    "jornada": 5,
+    "local": "San Martín",
+    "visitante": "At. Cueto",
+    "arbitro": "FERNÁNDEZ FERNÁNDEZ, RUBÉN",
+    "equipos": {
+      "San Martín": {
+        "titulares": [
+          {
+            "dorsal": "1",
+            "nombre": "FRAILE GARCIA, MATIAS"
+          },
+          {
+            "dorsal": "3",
+            "nombre": "GONZALEZ FERNANDEZ, ALEX"
+          },
+          {
+            "dorsal": "4",
+            "nombre": "ZABALETA DE LA FUENTE, GONZALO"
+          },
+          {
+            "dorsal": "6",
+            "nombre": "PORTILLA PUENTE, JAVIER"
+          },
+          {
+            "dorsal": "7",
+            "nombre": "SALARICHS MAZÓN, PABLO"
+          },
+          {
+            "dorsal": "28",
+            "nombre": "OPORTO DE CABO, MATEO"
+          }
+        ],
+        "suplentes": [
+          {
+            "dorsal": "2",
+            "nombre": "CABO DE LA CAL, GONZALO"
+          },
+          {
+            "dorsal": "8",
+            "nombre": "GARCIA DE LA RASILLA COBO, ALEJO"
+          },
+          {
+            "dorsal": "11",
+            "nombre": "MULAI-ZEIN AZMAN, CHEJUNA"
+          },
+          {
+            "dorsal": "16",
+            "nombre": "ARGUMOSA BADA, NICOLAS"
+          }
+        ]
+      },
+      "At. Cueto": {
+        "titulares": [
+          {
+            "dorsal": "3",
+            "nombre": "SEDANO SALAZAR, NICOLÁS"
+          },
+          {
+            "dorsal": "5",
+            "nombre": "LOPEZ HERRERA, NEIZAN"
+          },
+          {
+            "dorsal": "6",
+            "nombre": "NÚÑEZ TORRE, MARTÍN"
+          },
+          {
+            "dorsal": "8",
+            "nombre": "NAVEDO GONZÁLEZ, BOSCO"
+          },
+          {
+            "dorsal": "9",
+            "nombre": "TRUJEDA CARRAL, MILAN"
+          },
+          {
+            "dorsal": "12",
+            "nombre": "SIERRA GARCÍA, NICOLÁS"
+          }
+        ],
+        "suplentes": [
+          {
+            "dorsal": "7",
+            "nombre": "MARTÍN INGUANZO, PABLO"
+          }
+        ]
+      }
+    },
+    "goles": [
+      {
+        "minuto": 9,
+        "jugador": "NAVEDO GONZÁLEZ, BOSCO",
+        "equipo": "At. Cueto",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 22,
+        "jugador": "GARCIA DE LA RASILLA COBO, ALEJO",
+        "equipo": "San Martín",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 34,
+        "jugador": "LOPEZ HERRERA, NEIZAN",
+        "equipo": "At. Cueto",
+        "tipo": "normal"
+      }
+    ],
+    "marcador": null
+  },
+  "254661": {
+    "version": 2,
+    "jornada": 5,
+    "local": "Velarde",
+    "visitante": "Textil Escudo",
+    "arbitro": "MARTÍNEZ BALAGUER, NURIA",
+    "equipos": {
+      "Velarde": {
+        "titulares": [
+          {
+            "dorsal": "13",
+            "nombre": "TEJA GANDARILLAS, GONZALO"
+          },
+          {
+            "dorsal": "4",
+            "nombre": "BEGEGA DIEZ, MATIAS"
+          },
+          {
+            "dorsal": "6",
+            "nombre": "VAZQUEZ FERNANDEZ, CARLOS"
+          },
+          {
+            "dorsal": "8",
+            "nombre": "MONTÓN MORENO, DIEGO"
+          },
+          {
+            "dorsal": "10",
+            "nombre": "MACIAS CADELO, DARIO"
+          },
+          {
+            "dorsal": "11",
+            "nombre": "HEDILLA GONZALEZ, LUCAS"
+          }
+        ],
+        "suplentes": [
+          {
+            "dorsal": "5",
+            "nombre": "LOPEZ ALVAREZ, HUGO"
+          },
+          {
+            "dorsal": "9",
+            "nombre": "PITUSCAN, IVAN"
+          },
+          {
+            "dorsal": "12",
+            "nombre": "MARTINEZ VRANCEANU, MATEO"
+          },
+          {
+            "dorsal": "14",
+            "nombre": "CASTANEDO SAINZ, ALEJANDRO"
+          }
+        ]
+      },
+      "Textil Escudo": {
+        "titulares": [
+          {
+            "dorsal": "1",
+            "nombre": "MACHADO ALEGRIA, DARIO"
+          },
+          {
+            "dorsal": "3",
+            "nombre": "RODRIGUEZ FERNANDEZ, SERGIO"
+          },
+          {
+            "dorsal": "6",
+            "nombre": "GONZALEZ MIER, IAN"
+          },
+          {
+            "dorsal": "7",
+            "nombre": "GONZALEZ GUTIERREZ, JOSE MANUEL"
+          },
+          {
+            "dorsal": "9",
+            "nombre": "ALEGRE MARTINEZ, HELENA"
+          },
+          {
+            "dorsal": "10",
+            "nombre": "MANTILLA FERNANDEZ, ALONSO"
+          }
+        ],
+        "suplentes": [
+          {
+            "dorsal": "8",
+            "nombre": "GONZALEZ GONZALEZ, ALEJO"
+          },
+          {
+            "dorsal": "11",
+            "nombre": "GOMEZ GOMEZ, LUCAS"
+          },
+          {
+            "dorsal": "14",
+            "nombre": "GUTIERREZ SANCHEZ, LUCAS"
+          }
+        ]
+      }
+    },
+    "goles": [
+      {
+        "minuto": 21,
+        "jugador": "CASTANEDO SAINZ, ALEJANDRO",
+        "equipo": "Velarde",
+        "tipo": "normal"
+      }
+    ],
+    "marcador": null
+  },
+  "254664": {
+    "version": 2,
+    "jornada": 5,
+    "local": "Polanco",
+    "visitante": "Rayo Santa Cruz",
+    "arbitro": "GARCIA OREÑA, DIEGO",
+    "equipos": {
+      "Polanco": {
+        "titulares": [
+          {
+            "dorsal": "1",
+            "nombre": "RUISÁNCHEZ GÓMEZ-HOYAL, MARIO"
+          },
+          {
+            "dorsal": "3",
+            "nombre": "RAMOS BUSTAMANTE, LUKA"
+          },
+          {
+            "dorsal": "7",
+            "nombre": "VARONA CASTAÑEDA, THIAGO"
+          },
+          {
+            "dorsal": "9",
+            "nombre": "BUENO CRESPO, HUGO"
+          },
+          {
+            "dorsal": "10",
+            "nombre": "VAL PEÑA, BRUNO"
+          },
+          {
+            "dorsal": "11",
+            "nombre": "VARELA NARVÁEZ, MARIO"
+          }
+        ],
+        "suplentes": [
+          {
+            "dorsal": "4",
+            "nombre": "GARCIA FUARROS, LUCAS"
+          },
+          {
+            "dorsal": "6",
+            "nombre": "GONZALEZ FERNANDEZ, MARCOS"
+          },
+          {
+            "dorsal": "8",
+            "nombre": "BRUGOS GARCÍA, MARIO"
+          },
+          {
+            "dorsal": "17",
+            "nombre": "GOMEZ FUARROS, ANDRES"
+          }
+        ]
+      },
+      "Rayo Santa Cruz": {
+        "titulares": [
+          {
+            "dorsal": "1",
+            "nombre": "BOUZGARROU CASTANEDO, HEDI"
+          },
+          {
+            "dorsal": "3",
+            "nombre": "SERRANO PEÑA, DAVID"
+          },
+          {
+            "dorsal": "4",
+            "nombre": "BOUZGARROU CASTANEDO, YUREM"
+          },
+          {
+            "dorsal": "6",
+            "nombre": "GUTIERREZ MARTINEZ, CRISTIAN"
+          },
+          {
+            "dorsal": "8",
+            "nombre": "FERNANDEZ CRUZ, MATEO"
+          },
+          {
+            "dorsal": "9",
+            "nombre": "MONJE MARTINEZ, PABLO"
+          }
+        ],
+        "suplentes": [
+          {
+            "dorsal": "7",
+            "nombre": "BASCONES ARIAS, MATEO"
+          }
+        ]
+      }
+    },
+    "goles": [
+      {
+        "minuto": 9,
+        "jugador": "FERNANDEZ CRUZ, MATEO",
+        "equipo": "Rayo Santa Cruz",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 15,
+        "jugador": "VAL PEÑA, BRUNO",
+        "equipo": "Polanco",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 21,
+        "jugador": "BASCONES ARIAS, MATEO",
+        "equipo": "Rayo Santa Cruz",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 30,
+        "jugador": "FERNANDEZ CRUZ, MATEO",
+        "equipo": "Rayo Santa Cruz",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 32,
+        "jugador": "FERNANDEZ CRUZ, MATEO",
+        "equipo": "Rayo Santa Cruz",
+        "tipo": "normal"
+      }
+    ],
+    "marcador": null
+  },
+  "254667": {
+    "version": 2,
+    "jornada": 5,
+    "local": "Marina Sport",
+    "visitante": "Cayón",
+    "arbitro": "GARCIA MAGALHAES, JOSE MARIA",
+    "equipos": {
+      "Marina Sport": {
+        "titulares": [
+          {
+            "dorsal": "1",
+            "nombre": "SERRATO MANEA, LUKA"
+          },
+          {
+            "dorsal": "4",
+            "nombre": "SAINZ SAINZ, BRUNO"
+          },
+          {
+            "dorsal": "5",
+            "nombre": "ALDEA MARTINEZ, MARCO"
+          },
+          {
+            "dorsal": "8",
+            "nombre": "MARTIN GONZALEZ, LUCA"
+          },
+          {
+            "dorsal": "9",
+            "nombre": "GUTIERREZ DEL PINO, DARIO"
+          },
+          {
+            "dorsal": "10",
+            "nombre": "MAZO GALLAT, NICOLAS"
+          }
+        ],
+        "suplentes": [
+          {
+            "dorsal": "7",
+            "nombre": "BARRIOS JIMENEZ, ALFREDO"
+          }
+        ]
+      },
+      "Cayón": {
+        "titulares": [
+          {
+            "dorsal": "7",
+            "nombre": "MARTINEZ PELAYO, CESAR"
+          },
+          {
+            "dorsal": "2",
+            "nombre": "RUIZ COBO, LUCIA"
+          },
+          {
+            "dorsal": "4",
+            "nombre": "MENDIGUCHIA MANTECA, DEVA"
+          },
+          {
+            "dorsal": "8",
+            "nombre": "LOPEZ MANTECON, KYLIAN"
+          },
+          {
+            "dorsal": "14",
+            "nombre": "GRISHEV JUNCO, PERLA"
+          },
+          {
+            "dorsal": "35",
+            "nombre": "SAINZ SAINZ, JANA"
+          }
+        ],
+        "suplentes": [
+          {
+            "dorsal": "10",
+            "nombre": "GÓMEZ DE LA GALA, DAREM"
+          },
+          {
+            "dorsal": "24",
+            "nombre": "MANTECA BECERRIL, MARIO"
+          },
+          {
+            "dorsal": "27",
+            "nombre": "COLSA DE LA PINTA, GAEL"
+          }
+        ]
+      }
+    },
+    "goles": [
+      {
+        "minuto": 15,
+        "jugador": "GÓMEZ DE LA GALA, DAREM",
+        "equipo": "Cayón",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 19,
+        "jugador": "COLSA DE LA PINTA, GAEL",
+        "equipo": "Cayón",
+        "tipo": "normal"
+      }
+    ],
+    "marcador": null
+  },
+  "255194": {
+    "version": 2,
+    "jornada": 5,
+    "local": "San Felices",
+    "visitante": "Arenas de Iguña",
+    "arbitro": "VILLATE CUADRADO, JOSE FRANCISCO",
+    "equipos": {
+      "San Felices": {
+        "titulares": [
+          {
+            "dorsal": "1",
+            "nombre": "GUTIERREZ FERNANDEZ, MARTIN"
+          },
+          {
+            "dorsal": "2",
+            "nombre": "CASCUDO CEBALLOS, MATIAS"
+          },
+          {
+            "dorsal": "3",
+            "nombre": "OUATTARA PORTILLA, OMAR"
+          },
+          {
+            "dorsal": "6",
+            "nombre": "RUIZ CEBALLOS, NOEL"
+          },
+          {
+            "dorsal": "8",
+            "nombre": "MONTES CRUZ, BRUNO"
+          },
+          {
+            "dorsal": "14",
+            "nombre": "MAGALDI PORRAS, KEVIN"
+          }
+        ],
+        "suplentes": [
+          {
+            "dorsal": "5",
+            "nombre": "MUÑOZ PORTILLA, ELOY"
+          },
+          {
+            "dorsal": "7",
+            "nombre": "HENALES RUIZ, UBAY"
+          },
+          {
+            "dorsal": "10",
+            "nombre": "PEREDO DIAZ, HUGO"
+          },
+          {
+            "dorsal": "12",
+            "nombre": "OBREGÓN MENDIGUCHIA, MARCO"
+          }
+        ]
+      },
+      "Arenas de Iguña": {
+        "titulares": [
+          {
+            "dorsal": "51",
+            "nombre": "CASTILLO GUILLEN, AITOR"
+          },
+          {
+            "dorsal": "41",
+            "nombre": "CALDERON FERNANDEZ, OSCAR"
+          },
+          {
+            "dorsal": "44",
+            "nombre": "AGUADO PEREDO, MARCO"
+          },
+          {
+            "dorsal": "45",
+            "nombre": "MARTINEZ VACA, MATEO"
+          },
+          {
+            "dorsal": "48",
+            "nombre": "RODRIGUEZ MARTINEZ, GONZALO"
+          },
+          {
+            "dorsal": "50",
+            "nombre": "HERRERO DIAZ, JORGE"
+          }
+        ],
+        "suplentes": [
+          {
+            "dorsal": "46",
+            "nombre": "FERNANDEZ RUIZ, ALEX"
+          },
+          {
+            "dorsal": "49",
+            "nombre": "GONZALEZ PORTILLA, DANIEL"
+          }
+        ]
+      }
+    },
+    "goles": [
+      {
+        "minuto": 4,
+        "jugador": "MUÑOZ PORTILLA, ELOY",
+        "equipo": "San Felices",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 5,
+        "jugador": "MUÑOZ PORTILLA, ELOY",
+        "equipo": "San Felices",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 7,
+        "jugador": "MUÑOZ PORTILLA, ELOY",
+        "equipo": "San Felices",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 13,
+        "jugador": "CASCUDO CEBALLOS, MATIAS",
+        "equipo": "San Felices",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 16,
+        "jugador": "GONZALEZ PORTILLA, DANIEL",
+        "equipo": "Arenas de Iguña",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 19,
+        "jugador": "PEREDO DIAZ, HUGO",
+        "equipo": "San Felices",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 27,
+        "jugador": "CALDERON FERNANDEZ, OSCAR",
+        "equipo": "Arenas de Iguña",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 30,
+        "jugador": "CASCUDO CEBALLOS, MATIAS",
+        "equipo": "San Felices",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 31,
+        "jugador": "RUIZ CEBALLOS, NOEL",
+        "equipo": "San Felices",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 33,
+        "jugador": "MUÑOZ PORTILLA, ELOY",
+        "equipo": "San Felices",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 36,
+        "jugador": "OUATTARA PORTILLA, OMAR",
+        "equipo": "San Felices",
+        "tipo": "normal"
+      }
+    ],
+    "marcador": null
   }
 }
