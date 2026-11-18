@@ -283,9 +283,10 @@
       "estado": ""
     },
     "San Felices|At. Cueto": {
-      "fecha": "2026-11-22",
+      "fecha": "2026-11-21",
       "campo": "Pab. de San Felices Buelna",
-      "estado": ""
+      "estado": "",
+      "hora": "16:30"
     },
     "Marina Sport|Vimenor": {
       "fecha": "2026-11-22",
@@ -301,7 +302,7 @@
     },
     "Amistad Sniace|Rayo Santa Cruz": {
       "fecha": "2026-11-22",
-      "hora": "13:00",
+      "hora": "12:00",
       "campo": "Pab. E.P.Pachín",
       "estado": ""
     }
