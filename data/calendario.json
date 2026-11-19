@@ -268,43 +268,57 @@
       "fecha": "2026-11-21",
       "hora": "10:00",
       "campo": "Pab. Luis Urrutia Muriedas",
-      "estado": ""
+      "estado": "",
+      "arbitro": "PEREZ MUELA, DIEGO",
+      "acta": "255195"
     },
     "Polanco|Tropezón": {
       "fecha": "2026-11-21",
       "hora": "10:00",
       "campo": "Pab. de Polanco",
-      "estado": ""
+      "estado": "",
+      "arbitro": "GARCIA OREÑA, DIEGO",
+      "acta": "254679"
     },
     "San Martín|Cayón": {
       "fecha": "2026-11-21",
       "hora": "11:00",
       "campo": "Pab. de Suances",
-      "estado": ""
+      "estado": "",
+      "arbitro": "MORANTE PARADA, BELEN",
+      "acta": "254680"
     },
     "San Felices|At. Cueto": {
       "fecha": "2026-11-21",
       "campo": "Pab. de San Felices Buelna",
       "estado": "",
-      "hora": "16:30"
+      "hora": "16:30",
+      "arbitro": "MORANTE PARADA, BELEN",
+      "acta": "254678"
     },
     "Marina Sport|Vimenor": {
       "fecha": "2026-11-22",
       "hora": "10:00",
       "campo": "Pab. de Soto La Marina",
-      "estado": ""
+      "estado": "",
+      "arbitro": "GONZALEZ GARCIA, PABLO",
+      "acta": "254681"
     },
     "Textil Escudo|Ayron": {
       "fecha": "2026-11-22",
       "hora": "11:00",
       "campo": "Pab. Juan M. Pares / Cabezón",
-      "estado": ""
+      "estado": "",
+      "arbitro": "GARCÍA FERNÁNDEZ, SATURNINO",
+      "acta": "254675"
     },
     "Amistad Sniace|Rayo Santa Cruz": {
       "fecha": "2026-11-22",
       "hora": "12:00",
       "campo": "Pab. E.P.Pachín",
-      "estado": ""
+      "estado": "",
+      "arbitro": "FLICH GONZÁLEZ, JORGE",
+      "acta": "254677"
     }
   },
   "8": {
