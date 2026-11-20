@@ -283,7 +283,7 @@
     "San Martín|Cayón": {
       "fecha": "2026-11-21",
       "hora": "11:00",
-      "campo": "Pab. de Suances",
+      "campo": "Pab. de Hinojedo",
       "estado": "",
       "arbitro": "MORANTE PARADA, BELEN",
       "acta": "254680"
@@ -309,7 +309,7 @@
       "hora": "11:00",
       "campo": "Pab. Juan M. Pares / Cabezón",
       "estado": "",
-      "arbitro": "GARCÍA FERNÁNDEZ, SATURNINO",
+      "arbitro": "REVILLA MARTÍNEZ, ISRAEL",
       "acta": "254675"
     },
     "Amistad Sniace|Rayo Santa Cruz": {
@@ -338,9 +338,10 @@
       "estado": ""
     },
     "At. Cueto|Amistad Sniace": {
-      "fecha": "2026-11-29",
+      "fecha": "2026-11-28",
       "campo": "Pab. de Cueto Uco Lastra",
-      "estado": ""
+      "estado": "",
+      "hora": "12:00"
     },
     "Tropezón|San Felices": {
       "fecha": "2026-11-29",
