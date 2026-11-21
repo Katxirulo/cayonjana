@@ -5935,5 +5935,141 @@
       }
     ],
     "marcador": null
+  },
+  "254680": {
+    "version": 2,
+    "jornada": 7,
+    "local": "San Martín",
+    "visitante": "Cayón",
+    "arbitro": "MORANTE PARADA, BELEN",
+    "equipos": {
+      "San Martín": {
+        "titulares": [
+          {
+            "dorsal": "1",
+            "nombre": "GONZALEZ FERNANDEZ, ALEX"
+          },
+          {
+            "dorsal": "4",
+            "nombre": "ZABALETA DE LA FUENTE, GONZALO"
+          },
+          {
+            "dorsal": "6",
+            "nombre": "PORTILLA PUENTE, JAVIER"
+          },
+          {
+            "dorsal": "8",
+            "nombre": "GARCIA DE LA RASILLA COBO, ALEJO"
+          },
+          {
+            "dorsal": "16",
+            "nombre": "ARGUMOSA BADA, NICOLAS"
+          },
+          {
+            "dorsal": "28",
+            "nombre": "OPORTO DE CABO, MATEO"
+          }
+        ],
+        "suplentes": [
+          {
+            "dorsal": "2",
+            "nombre": "CABO DE LA CAL, GONZALO"
+          },
+          {
+            "dorsal": "7",
+            "nombre": "SALARICHS MAZÓN, PABLO"
+          },
+          {
+            "dorsal": "10",
+            "nombre": "FRAILE GARCIA, MATIAS"
+          },
+          {
+            "dorsal": "11",
+            "nombre": "MULAI-ZEIN AZMAN, CHEJUNA"
+          }
+        ]
+      },
+      "Cayón": {
+        "titulares": [
+          {
+            "dorsal": "8",
+            "nombre": "LOPEZ MANTECON, KYLIAN"
+          },
+          {
+            "dorsal": "2",
+            "nombre": "RUIZ COBO, LUCIA"
+          },
+          {
+            "dorsal": "4",
+            "nombre": "MENDIGUCHIA MANTECA, DEVA"
+          },
+          {
+            "dorsal": "7",
+            "nombre": "MARTINEZ PELAYO, CESAR"
+          },
+          {
+            "dorsal": "24",
+            "nombre": "MANTECA BECERRIL, MARIO"
+          },
+          {
+            "dorsal": "27",
+            "nombre": "COLSA DE LA PINTA, GAEL"
+          }
+        ],
+        "suplentes": [
+          {
+            "dorsal": "10",
+            "nombre": "GÓMEZ DE LA GALA, DAREM"
+          },
+          {
+            "dorsal": "14",
+            "nombre": "GRISHEV JUNCO, PERLA"
+          },
+          {
+            "dorsal": "35",
+            "nombre": "SAINZ SAINZ, JANA"
+          }
+        ]
+      }
+    },
+    "goles": [
+      {
+        "minuto": 7,
+        "jugador": "OPORTO DE CABO, MATEO",
+        "equipo": "San Martín",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 16,
+        "jugador": "OPORTO DE CABO, MATEO",
+        "equipo": "San Martín",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 18,
+        "jugador": "ZABALETA DE LA FUENTE, GONZALO",
+        "equipo": "San Martín",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 30,
+        "jugador": "COLSA DE LA PINTA, GAEL",
+        "equipo": "Cayón",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 37,
+        "jugador": "ZABALETA DE LA FUENTE, GONZALO",
+        "equipo": "San Martín",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 39,
+        "jugador": "OPORTO DE CABO, MATEO",
+        "equipo": "San Martín",
+        "tipo": "normal"
+      }
+    ],
+    "marcador": null
   }
 }
