@@ -335,7 +335,8 @@
     "Rayo Santa Cruz|Velarde": {
       "fecha": "2026-11-29",
       "campo": "Pab. de Soto La Marina",
-      "estado": ""
+      "estado": "",
+      "hora": "11:00"
     },
     "At. Cueto|Amistad Sniace": {
       "fecha": "2026-11-28",
@@ -349,9 +350,10 @@
       "estado": ""
     },
     "Cayón|Polanco": {
-      "fecha": "2026-11-29",
+      "fecha": "2026-11-28",
       "campo": "Pab. de Sta Mª.Cayón",
-      "estado": ""
+      "estado": "",
+      "hora": "12:00"
     },
     "Vimenor|San Martín": {
       "fecha": "2026-11-29",
