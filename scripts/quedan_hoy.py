@@ -31,7 +31,8 @@ for j, l, v, gl, gv in filas:
         # partido ya jugado cuyo acta aún no se ha podido descargar (p. ej. la primera carga de la temporada)
         atrasados.append(f"J{j} {l} - {v}")
 
-if (pendientes or atrasados) and ahora.hour < 22:
+# Solo de 8:00 a 22:00: si GitHub lanza de madrugada una ejecución retrasada, no se queda en bucle hasta el amanecer
+if (pendientes or atrasados) and 8 <= ahora.hour < 22:
     if pendientes:
         print("Partidos de hoy aún sin resultado: " + "; ".join(pendientes))
     if atrasados:
