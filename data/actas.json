@@ -6071,5 +6071,147 @@
       }
     ],
     "marcador": null
+  },
+  "254678": {
+    "version": 2,
+    "jornada": 7,
+    "local": "San Felices",
+    "visitante": "At. Cueto",
+    "arbitro": "MORANTE PARADA, BELEN",
+    "equipos": {
+      "San Felices": {
+        "titulares": [
+          {
+            "dorsal": "1",
+            "nombre": "GUTIERREZ FERNANDEZ, MARTIN"
+          },
+          {
+            "dorsal": "2",
+            "nombre": "CASCUDO CEBALLOS, MATIAS"
+          },
+          {
+            "dorsal": "3",
+            "nombre": "OUATTARA PORTILLA, OMAR"
+          },
+          {
+            "dorsal": "5",
+            "nombre": "MUÑOZ PORTILLA, ELOY"
+          },
+          {
+            "dorsal": "6",
+            "nombre": "RUIZ CEBALLOS, NOEL"
+          },
+          {
+            "dorsal": "7",
+            "nombre": "HENALES RUIZ, UBAY"
+          }
+        ],
+        "suplentes": [
+          {
+            "dorsal": "8",
+            "nombre": "MONTES CRUZ, BRUNO"
+          },
+          {
+            "dorsal": "10",
+            "nombre": "PEREDO DIAZ, HUGO"
+          },
+          {
+            "dorsal": "12",
+            "nombre": "OBREGÓN MENDIGUCHIA, MARCO"
+          },
+          {
+            "dorsal": "14",
+            "nombre": "MAGALDI PORRAS, KEVIN"
+          }
+        ]
+      },
+      "At. Cueto": {
+        "titulares": [
+          {
+            "dorsal": "1",
+            "nombre": "RODRÍGUEZ DE LA FLOR SÁNCHEZ, LUCA"
+          },
+          {
+            "dorsal": "2",
+            "nombre": "HELGUERA DIEGO, MARCO"
+          },
+          {
+            "dorsal": "3",
+            "nombre": "SEDANO SALAZAR, NICOLÁS"
+          },
+          {
+            "dorsal": "6",
+            "nombre": "NÚÑEZ TORRE, MARTÍN"
+          },
+          {
+            "dorsal": "7",
+            "nombre": "MARTÍN INGUANZO, PABLO"
+          },
+          {
+            "dorsal": "8",
+            "nombre": "NAVEDO GONZÁLEZ, BOSCO"
+          }
+        ],
+        "suplentes": [
+          {
+            "dorsal": "5",
+            "nombre": "LOPEZ HERRERA, NEIZAN"
+          },
+          {
+            "dorsal": "9",
+            "nombre": "TRUJEDA CARRAL, MILAN"
+          },
+          {
+            "dorsal": "12",
+            "nombre": "SIERRA GARCÍA, NICOLÁS"
+          }
+        ]
+      }
+    },
+    "goles": [
+      {
+        "minuto": 1,
+        "jugador": "NÚÑEZ TORRE, MARTÍN",
+        "equipo": "At. Cueto",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 17,
+        "jugador": "NÚÑEZ TORRE, MARTÍN",
+        "equipo": "At. Cueto",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 25,
+        "jugador": "RUIZ CEBALLOS, NOEL",
+        "equipo": "San Felices",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 27,
+        "jugador": "MARTÍN INGUANZO, PABLO",
+        "equipo": "At. Cueto",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 28,
+        "jugador": "MUÑOZ PORTILLA, ELOY",
+        "equipo": "San Felices",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 31,
+        "jugador": "MUÑOZ PORTILLA, ELOY",
+        "equipo": "San Felices",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 33,
+        "jugador": "MUÑOZ PORTILLA, ELOY",
+        "equipo": "San Felices",
+        "tipo": "normal"
+      }
+    ],
+    "marcador": null
   }
 }
