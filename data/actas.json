@@ -6595,5 +6595,115 @@
       }
     ],
     "marcador": null
+  },
+  "255182": {
+    "version": 2,
+    "jornada": 8,
+    "local": "Arenas de Iguña",
+    "visitante": "Textil Escudo",
+    "arbitro": "GONZALEZ FERNANDEZ, RAQUEL",
+    "equipos": {
+      "Arenas de Iguña": {
+        "titulares": [
+          {
+            "dorsal": "1",
+            "nombre": "HERRERO DIAZ, JORGE"
+          },
+          {
+            "dorsal": "5",
+            "nombre": "FERNANDEZ RUIZ, ALEX"
+          },
+          {
+            "dorsal": "6",
+            "nombre": "RODRIGUEZ MARTINEZ, GONZALO"
+          },
+          {
+            "dorsal": "11",
+            "nombre": "MARTINEZ VACA, MATEO"
+          },
+          {
+            "dorsal": "12",
+            "nombre": "CALDERON FERNANDEZ, OSCAR"
+          },
+          {
+            "dorsal": "13",
+            "nombre": "AGUADO PEREDO, MARCO"
+          }
+        ],
+        "suplentes": [
+          {
+            "dorsal": "4",
+            "nombre": "GONZALEZ PORTILLA, DANIEL"
+          },
+          {
+            "dorsal": "7",
+            "nombre": "CASTILLO GUILLEN, AITOR"
+          }
+        ]
+      },
+      "Textil Escudo": {
+        "titulares": [
+          {
+            "dorsal": "1",
+            "nombre": "MACHADO ALEGRIA, DARIO"
+          },
+          {
+            "dorsal": "6",
+            "nombre": "GONZALEZ MIER, IAN"
+          },
+          {
+            "dorsal": "7",
+            "nombre": "GONZALEZ GUTIERREZ, JOSE MANUEL"
+          },
+          {
+            "dorsal": "9",
+            "nombre": "ALEGRE MARTINEZ, HELENA"
+          },
+          {
+            "dorsal": "10",
+            "nombre": "MANTILLA FERNANDEZ, ALONSO"
+          },
+          {
+            "dorsal": "11",
+            "nombre": "GOMEZ GOMEZ, LUCAS"
+          }
+        ],
+        "suplentes": [
+          {
+            "dorsal": "3",
+            "nombre": "RODRIGUEZ FERNANDEZ, SERGIO"
+          },
+          {
+            "dorsal": "8",
+            "nombre": "GONZALEZ GONZALEZ, ALEJO"
+          },
+          {
+            "dorsal": "14",
+            "nombre": "GUTIERREZ SANCHEZ, LUCAS"
+          }
+        ]
+      }
+    },
+    "goles": [
+      {
+        "minuto": 16,
+        "jugador": "MANTILLA FERNANDEZ, ALONSO",
+        "equipo": "Textil Escudo",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 24,
+        "jugador": "GONZALEZ MIER, IAN",
+        "equipo": "Textil Escudo",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 27,
+        "jugador": "MANTILLA FERNANDEZ, ALONSO",
+        "equipo": "Textil Escudo",
+        "tipo": "normal"
+      }
+    ],
+    "marcador": null
   }
 }

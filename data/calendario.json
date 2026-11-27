@@ -326,40 +326,57 @@
       "fecha": "2026-11-29",
       "campo": "Pab. de Vargas",
       "estado": "",
-      "hora": "12:00"
+      "hora": "12:00",
+      "arbitro": "GARCIA MAGALHAES, JOSE MARIA",
+      "acta": "254682"
     },
     "Arenas de Iguña|Textil Escudo": {
-      "fecha": "2026-11-29",
+      "fecha": "2026-11-27",
       "campo": "Pab. de La Serna Iguña.",
-      "estado": ""
+      "estado": "final",
+      "hora": "19:00",
+      "arbitro": "GONZALEZ FERNANDEZ, RAQUEL",
+      "acta": "255182"
     },
     "Rayo Santa Cruz|Velarde": {
-      "fecha": "2026-11-29",
+      "fecha": "2026-11-28",
       "campo": "Pab. de Soto La Marina",
       "estado": "",
-      "hora": "11:00"
+      "hora": "13:00",
+      "arbitro": "ECHEZARRETA GONZÁLEZ, CESAR EDUARDO",
+      "acta": "254684"
     },
     "At. Cueto|Amistad Sniace": {
-      "fecha": "2026-11-28",
-      "campo": "Pab. de Cueto Uco Lastra",
+      "fecha": "2026-11-29",
+      "campo": "Pab. Col.Numancia",
       "estado": "",
-      "hora": "12:00"
+      "hora": "10:00",
+      "arbitro": "ECHEZARRETA GONZÁLEZ, CESAR EDUARDO",
+      "acta": "254685"
     },
     "Tropezón|San Felices": {
       "fecha": "2026-11-29",
-      "campo": "Pab. Maria Pardo / R. Viar",
-      "estado": ""
+      "campo": "Pab. E.P.Pachín",
+      "estado": "",
+      "hora": "12:00",
+      "arbitro": "VILLATE CUADRADO, JOSE FRANCISCO",
+      "acta": "254686"
     },
     "Cayón|Polanco": {
       "fecha": "2026-11-28",
       "campo": "Pab. de Sta Mª.Cayón",
       "estado": "",
-      "hora": "12:00"
+      "hora": "12:00",
+      "arbitro": "CUESTA GARCIA, MIGUEL",
+      "acta": "254687"
     },
     "Vimenor|San Martín": {
       "fecha": "2026-11-29",
-      "campo": "Pab. de Liencres",
-      "estado": ""
+      "campo": "Pab. de Vioño",
+      "estado": "",
+      "hora": "11:00",
+      "arbitro": "MARTINEZ FONTECILLA, FRANCISCO",
+      "acta": "254688"
     }
   },
   "9": {
