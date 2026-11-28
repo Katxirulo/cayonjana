@@ -6849,5 +6849,139 @@
       }
     ],
     "marcador": null
+  },
+  "254684": {
+    "version": 2,
+    "jornada": 8,
+    "local": "Rayo Santa Cruz",
+    "visitante": "Velarde",
+    "arbitro": "ECHEZARRETA GONZÁLEZ, CESAR EDUARDO",
+    "equipos": {
+      "Rayo Santa Cruz": {
+        "titulares": [
+          {
+            "dorsal": "1",
+            "nombre": "BOUZGARROU CASTANEDO, YUREM"
+          },
+          {
+            "dorsal": "6",
+            "nombre": "GUTIERREZ MARTINEZ, CRISTIAN"
+          },
+          {
+            "dorsal": "7",
+            "nombre": "BASCONES ARIAS, MATEO"
+          },
+          {
+            "dorsal": "9",
+            "nombre": "MONJE MARTINEZ, PABLO"
+          },
+          {
+            "dorsal": "18",
+            "nombre": "RUEDA CEBALLOS, SERGIO"
+          },
+          {
+            "dorsal": "20",
+            "nombre": "BOUZGARROU CASTANEDO, HEDI"
+          }
+        ],
+        "suplentes": [
+          {
+            "dorsal": "8",
+            "nombre": "FERNANDEZ CRUZ, MATEO"
+          },
+          {
+            "dorsal": "10",
+            "nombre": "MERAYO FERNANDEZ, LUCA"
+          }
+        ]
+      },
+      "Velarde": {
+        "titulares": [
+          {
+            "dorsal": "13",
+            "nombre": "TEJA GANDARILLAS, GONZALO"
+          },
+          {
+            "dorsal": "2",
+            "nombre": "HUIDOBRO POZUETA, SANTIAGO"
+          },
+          {
+            "dorsal": "4",
+            "nombre": "BEGEGA DIEZ, MATIAS"
+          },
+          {
+            "dorsal": "6",
+            "nombre": "VAZQUEZ FERNANDEZ, CARLOS"
+          },
+          {
+            "dorsal": "8",
+            "nombre": "MONTÓN MORENO, DIEGO"
+          },
+          {
+            "dorsal": "14",
+            "nombre": "CASTANEDO SAINZ, ALEJANDRO"
+          }
+        ],
+        "suplentes": [
+          {
+            "dorsal": "5",
+            "nombre": "LOPEZ ALVAREZ, HUGO"
+          },
+          {
+            "dorsal": "7",
+            "nombre": "GARAY GARCIA, ERIK"
+          },
+          {
+            "dorsal": "9",
+            "nombre": "PITUSCAN, IVAN"
+          },
+          {
+            "dorsal": "10",
+            "nombre": "MACIAS CADELO, DARIO"
+          },
+          {
+            "dorsal": "11",
+            "nombre": "HEDILLA GONZALEZ, LUCAS"
+          },
+          {
+            "dorsal": "12",
+            "nombre": "MARTINEZ VRANCEANU, MATEO"
+          }
+        ]
+      }
+    },
+    "goles": [
+      {
+        "minuto": 4,
+        "jugador": "HEDILLA GONZALEZ, LUCAS",
+        "equipo": "Velarde",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 21,
+        "jugador": "FERNANDEZ CRUZ, MATEO",
+        "equipo": "Rayo Santa Cruz",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 27,
+        "jugador": "LOPEZ ALVAREZ, HUGO",
+        "equipo": "Velarde",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 28,
+        "jugador": "FERNANDEZ CRUZ, MATEO",
+        "equipo": "Rayo Santa Cruz",
+        "tipo": "normal"
+      },
+      {
+        "minuto": 32,
+        "jugador": "MARTINEZ VRANCEANU, MATEO",
+        "equipo": "Velarde",
+        "tipo": "normal"
+      }
+    ],
+    "marcador": null
   }
 }
